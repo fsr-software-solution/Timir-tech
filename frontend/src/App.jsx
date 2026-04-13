@@ -1,13 +1,17 @@
-
-import './App.css'
+import React from 'react';
+import './App.css';
+import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer';
+import Home from './pages/Home';
 
 function App() {
-
   return (
     <>
-     <h1>first session</h1>
+      <Navbar />
+      <Home />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
