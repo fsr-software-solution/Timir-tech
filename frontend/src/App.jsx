@@ -4,12 +4,13 @@ import './App.css';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Home from './pages/Home';
-import SoftwareDevelopment from './pages/services/SoftwareDevelopment';
-import FullStackWebDev from './pages/services/FullStackWebDev';
-import MobileAppDev from './pages/services/MobileAppDev';
-import GraphicsDesign from './pages/services/GraphicsDesign';
-import VideoEditing from './pages/services/VideoEditing';
-import LearningBootcamp from './pages/services/LearningBootcamp';
+import SoftwareDevelopment from './Pages/services/SoftwareDevelopment';
+import FullStackWebDev from './Pages/services/FullStackWebDev';
+import MobileAppDev from './Pages/services/MobileAppDev';
+import GraphicsDesign from './Pages/services/GraphicsDesign';
+import VideoEditing from './Pages/services/VideoEditing';
+import LearningBootcamp from './Pages/services/LearningBootcamp';
+import CyberSecurity from './Pages/services/CyberSecurity';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/services/graphics-design" element={<GraphicsDesign />} />
         <Route path="/services/video-editing" element={<VideoEditing />} />
         <Route path="/services/learning-bootcamp" element={<LearningBootcamp />} />
+        <Route path="/services/cyber-security" element={<CyberSecurity />} />
       </Routes>
       <Footer />
     </Router>

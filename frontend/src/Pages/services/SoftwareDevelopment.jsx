@@ -17,7 +17,7 @@ const SoftwareDevelopment = () => {
                 <span className="material-symbols-outlined text-primary text-sm">terminal</span>
                 <span className="text-xs font-label uppercase tracking-[0.2em] text-on-surface-variant">Software Engineering</span>
               </div>
-              <h1 className="headline text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              <h1 className="headline text-2xl sm:text-4xl md:text-6xl font-bold mb-6 leading-tight px-2">
                 Software <span className="text-gradient">Development</span>
               </h1>
               <p className="text-lg text-on-surface-variant leading-relaxed mb-8">
@@ -40,7 +40,7 @@ const SoftwareDevelopment = () => {
                   <span className="w-3 h-3 rounded-full bg-green-500"></span>
                 </div>
                 <pre className="text-sm text-primary/80 font-mono leading-relaxed overflow-x-auto">
-{`class TimirEngine {
+                  {`class TimirEngine {
   constructor() {
     this.precision = "maximum";
     this.scalability = "infinite";
@@ -62,10 +62,9 @@ const SoftwareDevelopment = () => {
       {/* Technologies */}
       <section className="py-16 md:py-24 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
-          <h2 className="headline text-3xl md:text-4xl font-bold mb-12 text-center">Technologies We Master</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {['Python', 'Java', 'C++', 'Rust', 'Go', 'TypeScript', '.NET', 'Kotlin'].map((tech, i) => (
-              <div key={i} className="glass-card p-6 rounded-2xl text-center group hover:border-primary/40 transition-all">
+              <div key={i} className="glass-card p-4 sm:p-6 rounded-2xl text-center group hover:border-primary/40 transition-all">
                 <span className="material-symbols-outlined text-primary text-3xl mb-3 block group-hover:scale-110 transition-transform" style={{ fontVariationSettings: "'FILL' 1" }}>code</span>
                 <div className="font-bold text-on-surface">{tech}</div>
               </div>
@@ -76,9 +75,9 @@ const SoftwareDevelopment = () => {
 
       {/* Process */}
       <section className="py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 md:px-8">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8">
           <h2 className="headline text-3xl md:text-4xl font-bold mb-12 text-center">Our Development Process</h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
             {[
               { icon: 'search', title: 'Discovery', desc: 'We analyze your requirements and define the optimal architecture.' },
               { icon: 'architecture', title: 'Design', desc: 'Blueprint creation with UML, ERDs, and system design documents.' },

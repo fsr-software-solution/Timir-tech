@@ -11,18 +11,18 @@ const About = () => {
                         <p className="text-lg text-on-surface-variant mb-12 leading-loose">
                             Timir Tech isn't just a software house. We are a collective of visionaries, engineers, and designers dedicated to crafting the next generation of digital infrastructure.
                         </p>
-                        <div className="grid grid-cols-3 gap-8">
-                            <div className="p-6 rounded-3xl bg-surface-container-highest/40 border border-outline-variant/20">
-                                <div className="text-4xl font-headline font-bold text-primary mb-2">150+</div>
-                                <div className="text-xs font-label uppercase tracking-widest opacity-60">Projects</div>
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8">
+                            <div className="p-4 sm:p-6 rounded-3xl bg-surface-container-highest/40 border border-outline-variant/20 text-center">
+                                <div className="text-3xl sm:text-4xl font-headline font-bold text-primary mb-2">150+</div>
+                                <div className="text-[10px] sm:text-xs font-label uppercase tracking-widest opacity-60">Projects</div>
                             </div>
-                            <div className="p-6 rounded-3xl bg-surface-container-highest/40 border border-outline-variant/20">
-                                <div className="text-4xl font-headline font-bold text-primary mb-2">85+</div>
-                                <div className="text-xs font-label uppercase tracking-widest opacity-60">Clients</div>
+                            <div className="p-4 sm:p-6 rounded-3xl bg-surface-container-highest/40 border border-outline-variant/20 text-center">
+                                <div className="text-3xl sm:text-4xl font-headline font-bold text-primary mb-2">85+</div>
+                                <div className="text-[10px] sm:text-xs font-label uppercase tracking-widest opacity-60">Clients</div>
                             </div>
-                            <div className="p-6 rounded-3xl bg-surface-container-highest/40 border border-outline-variant/20">
-                                <div className="text-4xl font-headline font-bold text-primary mb-2">40+</div>
-                                <div className="text-xs font-label uppercase tracking-widest opacity-60">Experts</div>
+                            <div className="p-4 sm:p-6 rounded-3xl bg-surface-container-highest/40 border border-outline-variant/20 text-center">
+                                <div className="text-3xl sm:text-4xl font-headline font-bold text-primary mb-2">40+</div>
+                                <div className="text-[10px] sm:text-xs font-label uppercase tracking-widest opacity-60">Experts</div>
                             </div>
                         </div>
                     </div>
