@@ -12,7 +12,7 @@ const Hero = () => {
     useEffect(() => {
         const timer = setInterval(() => {
             setCurrentImage((prev) => (prev + 1) % images.length);
-        }, 4000);
+        }, 3000);
         return () => clearInterval(timer);
     }, []);
 
@@ -25,7 +25,7 @@ const Hero = () => {
                 {images.map((src, index) => (
                     <img
                         key={index}
-                        className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out mix-blend-screen ${index === currentImage ? 'opacity-20' : 'opacity-0'}`}
+                        className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-[2000ms] ease-in-out mix-blend-screen ${index === currentImage ? 'opacity-20' : 'opacity-0'}`}
                         alt={`Hero background ${index + 1}`}
                         src={src}
                     />
