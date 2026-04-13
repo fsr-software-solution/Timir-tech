@@ -31,7 +31,7 @@ const About = () => {
                             <img
                                 className="w-full h-full object-cover rounded-[3.8rem]"
                                 alt="High-tech server room with glowing orange LEDs and futuristic data center architecture"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBM27z89eeslmpQBPrUm6PGOdqgcI1W3kC5UaUakJNPmsJO7uy5UgLHtNoNMK23ABO9r0-QQ8KvTsVt7TcHrb1tCQVy8PxmkMmdN2DpY9fXpyoNkJxzceRkU4yF8iOxLHXj_8Jy8VdjK65TsploU06VdePx5vLucdjxKG7mnaXp-95jCE1mOq9In7_ZjIHPS1EXDj8dKvW1R52Ond_3Aq7jU5iv4LNTpfVahX1dOen6cRAizwnqpU7zT_-DE-Q3CTjg2XM7ia7PX5c7"
+                                src="https://th.bing.com/th/id/OIP.nNnu7QkIwwu2YlIkhTwVDAHaHa?w=175&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
                             />
                         </div>
                         <div className="absolute -bottom-8 -right-8 glass-card p-8 rounded-3xl max-w-xs border-primary/20 border">
