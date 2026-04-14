@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 
 const Hero = () => {
     const images = [
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuC8RNqH482B_ywFHnc__hvJJXCPEekXdQIocVFWZx9iGbmmRlwqRU6MNObwZRScGQ-q0eIOKwH8GYjbIOVSd8zc9pOctgis46FwfuKWqro1lTnvIZ_K9h5xMbJObWhQeo0Amf_pbUeQGdmLLLjNlBmIjIv7vX4dB_AnznXAqGmeY1VRuQDwonvuApOxC1MOhq-SCWxJ7oHwalwD6dNa1SCJ2wRfqU3nU6csec07qeCy3AH39Z6LdUHXw5nA1fwf9ISUjMS8ZjbU2wQN",
         "https://bairesdev.mo.cloudinary.net/blog/2022/08/portrait-of-a-man-using-a-computer-in-a-modern-office-picture-id1344688156-1.jpg?tx=w_1920,q_auto",
-        "https://th.bing.com/th?q=FrontEnd+Developer&w=1920&h=1080&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.5&pid=InlineBlock&rm=3&mkt=en-WW&cc=ET&setlang=en&adlt=strict&t=1"
+        "https://th.bing.com/th?q=FrontEnd+Developer&w=1920&h=1080&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.5&pid=InlineBlock&rm=3&mkt=en-WW&cc=ET&setlang=en&adlt=strict&t=1",
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuC8RNqH482B_ywFHnc__hvJJXCPEekXdQIocVFWZx9iGbmmRlwqRU6MNObwZRScGQ-q0eIOKwH8GYjbIOVSd8zc9pOctgis46FwfuKWqro1lTnvIZ_K9h5xMbJObWhQeo0Amf_pbUeQGdmLLLjNlBmIjIv7vX4dB_AnznXAqGmeY1VRuQDwonvuApOxC1MOhq-SCWxJ7oHwalwD6dNa1SCJ2wRfqU3nU6csec07qeCy3AH39Z6LdUHXw5nA1fwf9ISUjMS8ZjbU2wQN"
+
     ];
 
     const [currentImage, setCurrentImage] = useState(0);
