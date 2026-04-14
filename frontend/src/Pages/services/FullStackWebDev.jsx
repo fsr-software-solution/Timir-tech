@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import image from '../../assets/image.jpg'
 const FullStackWebDev = () => {
   return (
     <div className="min-h-screen pt-20">
@@ -18,10 +18,10 @@ const FullStackWebDev = () => {
                 <span className="text-xs font-label uppercase tracking-[0.2em] text-on-surface-variant">Engineering Career Path</span>
               </div>
               <h1 className="headline text-2xl sm:text-4xl md:text-6xl font-bold mb-6 leading-tight px-2">
-                Full-Stack <span className="text-gradient">Web Engineering</span>
+                Full-Stack <span className="text-gradient">Web development</span>
               </h1>
               <p className="text-lg text-on-surface-variant leading-relaxed mb-8">
-                Build modern, high-performance web applications. From pixel-perfect frontends to robust backend architectures, master the skills required by top-tier tech firms.
+                Build modern, high-performance web applications. From scrach frontends to robust backend architectures, master the skills required by top-tier tech firms.and market demand.
               </p>
               <div className="flex flex-wrap gap-4">
                 <button className="px-8 py-4 bg-gradient-to-br from-primary-container to-primary text-on-primary font-bold rounded-full shadow-2xl shadow-primary/20 hover:scale-105 transition-transform">
@@ -32,21 +32,15 @@ const FullStackWebDev = () => {
                 </button>
               </div>
             </div>
-            <div className="relative">
-              <div className="glass-card rounded-[3rem] p-1 overflow-hidden shadow-[0_32px_64px_-16px_rgba(0,0,0,0.3)]">
-                <div className="bg-surface-container-low rounded-[2.8rem] h-80 flex items-center justify-center p-8">
-                  <div className="grid grid-cols-3 gap-6">
-                    {['react', 'nodejs', 'typescript', 'mongodb', 'postgresql', 'nextjs'].map((icon, i) => (
-                      <div key={i} className="w-16 h-16 bg-surface-container-highest rounded-2xl flex items-center justify-center hover:scale-110 hover:-rotate-6 transition-all cursor-default group">
-                        <span className="material-symbols-outlined text-primary text-3xl opacity-40 group-hover:opacity-100">terminal</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <div className="absolute -top-6 -right-6 glass-card p-6 rounded-3xl border-primary/20">
-                <div className="text-sm font-bold opacity-60">Success Rate</div>
-                <div className="text-2xl font-bold text-primary">94%</div>
+            <div className="relative group flex justify-center lg:justify-end items-center">
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-[3rem] blur-2xl group-hover:blur-3xl transition-all duration-700"></div>
+              <div className="relative rounded-[3rem] overflow-hidden shadow-[0_32px_64px_-16px_rgba(0,0,0,0.5)] border border-white/10 w-full max-w-lg aspect-square lg:aspect-auto lg:h-[500px]">
+                <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-700 z-10"></div>
+                <img
+                  src={image}
+                  alt="Full Stack Development Bootcamp"
+                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-out"
+                />
               </div>
             </div>
           </div>
@@ -58,7 +52,7 @@ const FullStackWebDev = () => {
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="text-center mb-16">
             <h2 className="headline text-3xl md:text-4xl font-bold mb-4">Master the Modern Stack</h2>
-            <p className="text-on-surface-variant">We teach you the tools used by Netflix, Airbnb, and Facebook.</p>
+            <p className="text-on-surface-variant">We teach you the tools used by most companys  from html,css,javascript and bootstrap to node.js, react, express</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="glass-card p-8 rounded-3xl">
@@ -66,7 +60,7 @@ const FullStackWebDev = () => {
                 <span className="material-symbols-outlined text-2xl">diamond</span> Frontend Mastery
               </h3>
               <div className="flex flex-wrap gap-3">
-                {['React.js', 'Next.js', 'Tailwind CSS', 'TypeScript', 'Redux Toolkit', 'Framer Motion'].map((t, i) => (
+                {['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'React.js', 'Next.js', 'Tailwind CSS'].map((t, i) => (
                   <span key={i} className="px-4 py-2 rounded-full bg-surface-container-highest/50 border border-outline-variant/20 text-sm font-bold">{t}</span>
                 ))}
               </div>
@@ -76,7 +70,7 @@ const FullStackWebDev = () => {
                 <span className="material-symbols-outlined text-2xl">database</span> Backend Excellence
               </h3>
               <div className="flex flex-wrap gap-3">
-                {['Node.js', 'Express', 'PostgreSQL', 'MySQL', 'MongoDB', 'Prisma ORM', 'Redis', 'Docker', 'AWS Basics'].map((t, i) => (
+                {['Node.js', 'Express', 'MongoDB', 'MySQL', 'REST API', 'Docker', 'golang'].map((t, i) => (
                   <span key={i} className="px-4 py-2 rounded-full bg-surface-container-highest/50 border border-outline-variant/20 text-sm font-bold">{t}</span>
                 ))}
               </div>
@@ -92,8 +86,7 @@ const FullStackWebDev = () => {
             <div className="flex-1 order-2 md:order-1">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 {[
-                  { label: 'Coding Labs', val: '200+', icon: 'terminal' },
-                  { label: 'Real Projects', val: '8+', icon: 'tactic' },
+                  { label: 'Real Projects', val: '4+', icon: 'tactic' },
                   { label: 'Mentorship', val: '1:1', icon: 'groups' },
                   { label: 'Outcome', val: 'Portfolio', icon: 'workspace_premium' },
                 ].map((stat, i) => (
@@ -108,7 +101,7 @@ const FullStackWebDev = () => {
             <div className="flex-1 order-1 md:order-2">
               <h2 className="headline text-3xl md:text-5xl font-bold mb-6">Learn by <span className="text-gradient">Building</span></h2>
               <p className="text-lg text-on-surface-variant mb-8 leading-relaxed">
-                No boring lectures. From day one, you'll be writing code and building features. By the end of the bootcamp, you'll have a production-ready portfolio that proves your skills to any employer.
+                No boring lectures. From day one computer basics, you'll be writing code and building features. By the end of the bootcamp, you'll have a production-ready portfolio that proves your skills to any employer.
               </p>
               <ul className="space-y-4">
                 {['Industry-active engineers as instructors', 'Access to a private Discord community', 'Weekly code reviews and feedback', 'Job referral network access'].map((item, i) => (

@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 
 const Hero = () => {
     const images = [
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuC8RNqH482B_ywFHnc__hvJJXCPEekXdQIocVFWZx9iGbmmRlwqRU6MNObwZRScGQ-q0eIOKwH8GYjbIOVSd8zc9pOctgis46FwfuKWqro1lTnvIZ_K9h5xMbJObWhQeo0Amf_pbUeQGdmLLLjNlBmIjIv7vX4dB_AnznXAqGmeY1VRuQDwonvuApOxC1MOhq-SCWxJ7oHwalwD6dNa1SCJ2wRfqU3nU6csec07qeCy3AH39Z6LdUHXw5nA1fwf9ISUjMS8ZjbU2wQN",
         "https://bairesdev.mo.cloudinary.net/blog/2022/08/portrait-of-a-man-using-a-computer-in-a-modern-office-picture-id1344688156-1.jpg?tx=w_1920,q_auto",
-        "https://th.bing.com/th?q=FrontEnd+Developer&w=1920&h=1080&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.5&pid=InlineBlock&rm=3&mkt=en-WW&cc=ET&setlang=en&adlt=strict&t=1"
+        "https://th.bing.com/th?q=FrontEnd+Developer&w=1920&h=1080&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.5&pid=InlineBlock&rm=3&mkt=en-WW&cc=ET&setlang=en&adlt=strict&t=1",
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuC8RNqH482B_ywFHnc__hvJJXCPEekXdQIocVFWZx9iGbmmRlwqRU6MNObwZRScGQ-q0eIOKwH8GYjbIOVSd8zc9pOctgis46FwfuKWqro1lTnvIZ_K9h5xMbJObWhQeo0Amf_pbUeQGdmLLLjNlBmIjIv7vX4dB_AnznXAqGmeY1VRuQDwonvuApOxC1MOhq-SCWxJ7oHwalwD6dNa1SCJ2wRfqU3nU6csec07qeCy3AH39Z6LdUHXw5nA1fwf9ISUjMS8ZjbU2wQN"
+
     ];
 
     const [currentImage, setCurrentImage] = useState(0);
@@ -42,14 +43,7 @@ const Hero = () => {
                 <p className="font-body text-base sm:text-lg md:text-xl text-on-surface-variant max-w-3xl mx-auto mb-10 sm:mb-12 leading-relaxed px-4">
                     We engineer high-performance digital ecosystems that bridge the gap between human ambition and technological possibility.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center px-4">
-                    <button className="w-full sm:w-auto px-8 py-4 bg-gradient-to-br from-primary-container to-primary text-on-primary text-base font-bold rounded-full shadow-2xl shadow-primary/20 hover:scale-105 transition-transform">
-                        Get Started Now
-                    </button>
-                    <button className="w-full sm:w-auto px-8 py-4 border border-outline-variant/30 hover:bg-surface-bright/10 text-on-surface text-base font-bold rounded-full transition-all">
-                        View Services
-                    </button>
-                </div>
+               
             </div>
         </section>
     );

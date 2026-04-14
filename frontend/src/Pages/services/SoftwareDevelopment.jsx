@@ -24,9 +24,9 @@ const SoftwareDevelopment = () => {
                 We architect and build enterprise-grade software solutions that power businesses at scale. From desktop applications to distributed cloud systems, our engineering team delivers robust, maintainable code.
               </p>
               <div className="flex flex-wrap gap-4">
-                <button className="px-8 py-4 bg-gradient-to-br from-primary-container to-primary text-on-primary font-bold rounded-full shadow-2xl shadow-primary/20 hover:scale-105 transition-transform">
+                <a href="/#contact" className="px-8 py-4 bg-gradient-to-br from-primary-container to-primary text-on-primary font-bold rounded-full shadow-2xl shadow-primary/20 hover:scale-105 transition-transform inline-block text-center">
                   Start Your Project
-                </button>
+                </a>
                 <button className="px-8 py-4 border border-outline-variant/30 hover:bg-surface-bright/10 text-on-surface font-bold rounded-full transition-all">
                   View Case Studies
                 </button>

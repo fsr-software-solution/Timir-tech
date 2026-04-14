@@ -7,10 +7,11 @@ const Navbar = () => {
 
   const serviceItems = [
     { name: 'Software Development', path: '/services/software-development' },
-    { name: 'Full-Stack Web Development', path: '/services/fullstack-web-development' },
-    { name: 'Mobile App Development', path: '/services/mobile-app-development' },
-    { name: 'Graphics Design', path: '/services/graphics-design' },
-    { name: 'Video Editing', path: '/services/video-editing' },
+    { name: 'Full-Stack Web Development', path: '/services/web-development-service' },
+    { name: 'Mobile App Development', path: '/services/mobile-development-service' },
+    { name: 'Graphics Design', path: '/services/graphics-design-service' },
+    { name: 'Video Editing', path: '/services/video-editing-service' },
+    { name: 'Cyber Security', path: '/services/cyber-security-service' },
     { name: 'Learning Bootcamp', path: '/services/learning-bootcamp' },
   ];
 
@@ -58,9 +59,7 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center gap-2 sm:gap-4">
-            <button className="hidden sm:block bg-primary-container text-on-primary-container px-4 sm:px-6 py-2 rounded-full font-bold scale-95 active:scale-90 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 text-sm">
-              Get Started
-            </button>
+          
 
             {/* Mobile Toggle */}
             <button

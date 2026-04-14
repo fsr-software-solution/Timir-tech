@@ -44,12 +44,7 @@ const Contact = () => {
                         </div>
 
                         <div className="flex gap-4 pt-4 border-t border-white/5">
-                            <span className="text-xs font-bold uppercase tracking-widest opacity-40">Follow Us</span>
-                            <div className="flex gap-4">
-                                {['public', 'groups', 'campaign'].map((icon, i) => (
-                                    <span key={i} className="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors text-xl">{icon}</span>
-                                ))}
-                            </div>
+                          
                         </div>
                     </div>
 
@@ -87,7 +82,7 @@ const Contact = () => {
                                 </div>
 
                                 <div className="space-y-2">
-                                    <label className="text-xs font-bold uppercase tracking-widest opacity-60 ml-1">Your Message</label>
+                                    <label className="text-xs font-bold uppercase tracking-widest opacity-60 ml-1">what do you want? Your Message</label>
                                     <textarea
                                         rows="4"
                                         placeholder="Tell us about your project..."
