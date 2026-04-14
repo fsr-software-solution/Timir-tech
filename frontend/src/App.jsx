@@ -12,6 +12,11 @@ import GraphicsDesign from './Pages/services/GraphicsDesign';
 import VideoEditing from './Pages/services/VideoEditing';
 import LearningBootcamp from './Pages/services/LearningBootcamp';
 import CyberSecurity from './Pages/services/CyberSecurity';
+import WebDevelopmentService from './Pages/services/WebDevelopmentService';
+import MobileDevelopmentService from './Pages/services/MobileDevelopmentService';
+import GraphicsDesignService from './Pages/services/GraphicsDesignService';
+import VideoEditingService from './Pages/services/VideoEditingService';
+import CyberSecurityService from './Pages/services/CyberSecurityService';
 import PrivacyPolicy from './Pages/legal/PrivacyPolicy';
 import TermsOfService from './Pages/legal/TermsOfService';
 import CookiePolicy from './Pages/legal/CookiePolicy';
@@ -30,6 +35,11 @@ function App() {
         <Route path="/services/video-editing" element={<VideoEditing />} />
         <Route path="/services/learning-bootcamp" element={<LearningBootcamp />} />
         <Route path="/services/cyber-security" element={<CyberSecurity />} />
+        <Route path="/services/web-development-service" element={<WebDevelopmentService />} />
+        <Route path="/services/mobile-development-service" element={<MobileDevelopmentService />} />
+        <Route path="/services/graphics-design-service" element={<GraphicsDesignService />} />
+        <Route path="/services/video-editing-service" element={<VideoEditingService />} />
+        <Route path="/services/cyber-security-service" element={<CyberSecurityService />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-service" element={<TermsOfService />} />
         <Route path="/cookie-policy" element={<CookiePolicy />} />

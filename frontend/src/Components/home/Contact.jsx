@@ -82,7 +82,7 @@ const Contact = () => {
                                 </div>
 
                                 <div className="space-y-2">
-                                    <label className="text-xs font-bold uppercase tracking-widest opacity-60 ml-1">Your Message</label>
+                                    <label className="text-xs font-bold uppercase tracking-widest opacity-60 ml-1">what do you want? Your Message</label>
                                     <textarea
                                         rows="4"
                                         placeholder="Tell us about your project..."
