@@ -2,13 +2,13 @@ import React from 'react';
 
 const Services = () => {
     return (
-        <section className="py-16 md:py-32 relative" id="services">
-            <div className="max-w-7xl mx-auto px-8">
-                <div className="text-center mb-24">
-                    <h2 className="headline text-4xl md:text-6xl font-bold mb-6">Our Ecosystem</h2>
-                    <p className="text-on-surface-variant max-w-2xl mx-auto">From conceptual architecture to deployment, we provide end-to-end technical mastery.</p>
+        <section className="py-12 sm:py-16 md:py-32 relative overflow-hidden" id="services">
+            <div className="max-w-7xl mx-auto px-5 sm:px-8">
+                <div className="text-center mb-16 sm:mb-24 px-2">
+                    <h2 className="headline text-3xl sm:text-4xl md:text-6xl font-bold mb-6">Our Ecosystem</h2>
+                    <p className="text-on-surface-variant max-w-2xl mx-auto text-sm sm:text-base">From conceptual architecture to deployment, we provide end-to-end technical mastery.</p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                     <div className="glass-card p-10 rounded-[2.5rem] group hover:border-primary/40 transition-all duration-500">
                         <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary/20 transition-colors">
                             <span className="material-symbols-outlined text-primary text-3xl">code</span>

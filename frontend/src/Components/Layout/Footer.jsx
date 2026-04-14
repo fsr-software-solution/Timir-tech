@@ -3,8 +3,8 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer className="w-full border-t border-white/5 bg-slate-950">
-            <div className="max-w-7xl mx-auto px-8 py-20 grid grid-cols-1 md:grid-cols-3 gap-12 font-['Manrope'] text-sm">
-                <div className="space-y-6">
+            <div className="max-w-7xl mx-auto px-5 sm:px-8 py-16 sm:py-20 grid grid-cols-1 md:grid-cols-3 gap-12 font-['Manrope'] text-sm">
+                <div className="space-y-6 px-2">
                     <div className="text-3xl font-black text-amber-500">Timir Tech</div>
                     <p className="text-slate-500 leading-relaxed max-w-xs">Pioneering technical solutions for the digital age. We build with precision and scale with vision.</p>
                     <div className="flex gap-4">
@@ -51,7 +51,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="max-w-7xl mx-auto px-8 py-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500">
+            <div className="max-w-7xl mx-auto px-5 sm:px-8 py-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500">
                 <div>© 2024 Timir Tech. All rights reserved.</div>
                 <div className="flex gap-8">
                     <span className="flex items-center gap-2">

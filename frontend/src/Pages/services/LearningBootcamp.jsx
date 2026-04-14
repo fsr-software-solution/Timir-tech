@@ -17,7 +17,7 @@ const LearningBootcamp = () => {
                 <span className="material-symbols-outlined text-primary text-sm">school</span>
                 <span className="text-xs font-label uppercase tracking-[0.2em] text-on-surface-variant">Education Hub</span>
               </div>
-              <h1 className="headline text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              <h1 className="headline text-2xl sm:text-4xl md:text-6xl font-bold mb-6 leading-tight px-2">
                 Learning <span className="text-gradient">Bootcamp</span>
               </h1>
               <p className="text-lg text-on-surface-variant leading-relaxed mb-8">
@@ -73,12 +73,11 @@ const LearningBootcamp = () => {
           <h2 className="headline text-3xl md:text-4xl font-bold mb-12 text-center">Training Programs</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { icon: 'code', title: 'Web Development', desc: 'HTML, CSS, JavaScript, React, Node.js — from zero to full-stack developer.', duration: '12 Weeks' },
-              { icon: 'smartphone', title: 'Mobile Development', desc: 'Build production apps with React Native and Flutter frameworks.', duration: '10 Weeks' },
-              { icon: 'palette', title: 'UI/UX Design', desc: 'Figma mastery, design thinking, wireframing, and portfolio building.', duration: '8 Weeks' },
-              { icon: 'terminal', title: 'Python & Data', desc: 'Python programming, data analysis, and machine learning fundamentals.', duration: '12 Weeks' },
-              { icon: 'shield_lock', title: 'Cyber Security', desc: 'Ethical hacking, penetration testing, and security audit methodologies.', duration: '10 Weeks' },
-              { icon: 'videocam', title: 'Digital Media', desc: 'Video production, motion graphics, and social media content creation.', duration: '8 Weeks' },
+              { icon: 'code', title: 'Web Development', desc: 'Master modern web engineering from pixel-perfect frontends to robust backends.', duration: '12 Weeks', path: '/services/fullstack-web-development' },
+              { icon: 'smartphone', title: 'Mobile Development', desc: 'Build premium native and cross-platform applications for iOS and Android.', duration: '10 Weeks', path: '/services/mobile-app-development' },
+              { icon: 'palette', title: 'Graphics Design', desc: 'Visual storytelling, brand identity, and high-end graphic assets.', duration: '8 Weeks', path: '/services/graphics-design' },
+              { icon: 'shield_lock', title: 'Cyber Security', desc: 'Ethical hacking, network security, and professional penetration testing.', duration: '12 Weeks', path: '/services/cyber-security' },
+              { icon: 'videocam', title: 'Video Editing', desc: 'Professional cinematic editing, motion graphics, and digital media production.', duration: '10 Weeks', path: '/services/video-editing' },
             ].map((prog, i) => (
               <div key={i} className="glass-card p-8 rounded-3xl group hover:border-primary/40 transition-all">
                 <div className="flex items-center justify-between mb-6">
@@ -89,9 +88,9 @@ const LearningBootcamp = () => {
                 </div>
                 <h3 className="headline text-xl font-bold mb-3">{prog.title}</h3>
                 <p className="text-on-surface-variant text-sm leading-relaxed mb-6">{prog.desc}</p>
-                <a className="inline-flex items-center gap-2 text-primary font-bold text-sm group/link" href="#">
+                <Link className="inline-flex items-center gap-2 text-primary font-bold text-sm group/link" to={prog.path}>
                   Learn More <span className="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
-                </a>
+                </Link>
               </div>
             ))}
           </div>
@@ -99,10 +98,10 @@ const LearningBootcamp = () => {
       </section>
 
       {/* Why Us */}
-      <section className="py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 md:px-8">
+      <section className="py-12 sm:py-16 md:py-24 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-5 sm:px-8">
           <h2 className="headline text-3xl md:text-4xl font-bold mb-12 text-center">Why Train With Us</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {[
               { icon: 'engineering', val: '95%', label: 'Job Placement' },
               { icon: 'groups', val: '500+', label: 'Graduates' },

@@ -31,22 +31,22 @@ const Hero = () => {
                     />
                 ))}
             </div>
-            <div className="relative z-10 max-w-7xl mx-auto px-8 text-center">
-                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-highest/50 border border-outline-variant/30 mb-8">
+            <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 text-center">
+                <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-surface-container-highest/50 border border-outline-variant/30 mb-6 sm:mb-8">
                     <span className="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span>
-                    <span className="text-xs font-label uppercase tracking-[0.2em] text-on-surface-variant">The Future is Here</span>
+                    <span className="text-[10px] sm:text-xs font-label uppercase tracking-[0.2em] text-on-surface-variant">The Future is Here</span>
                 </div>
-                <h3 className="headline text-4xl md:text-5xl font-bold tracking-tighter mb-8 max-w-5xl mx-auto leading-[1.1]">
+                <h3 className="headline text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6 sm:mb-8 max-w-5xl mx-auto leading-[1.2] sm:leading-[1.1] px-2">
                     Building the <span className="text-gradient">Future</span> with Technology
                 </h3>
-                <p className="font-body text-xl md:text-2xl text-on-surface-variant max-w-3xl mx-auto mb-12 leading-relaxed">
+                <p className="font-body text-base sm:text-lg md:text-xl text-on-surface-variant max-w-3xl mx-auto mb-10 sm:mb-12 leading-relaxed px-4">
                     We engineer high-performance digital ecosystems that bridge the gap between human ambition and technological possibility.
                 </p>
-                <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
-                    <button className="px-10 py-5 bg-gradient-to-br from-primary-container to-primary text-on-primary text-lg font-bold rounded-full shadow-2xl shadow-primary/20 hover:scale-105 transition-transform">
+                <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center px-4">
+                    <button className="w-full sm:w-auto px-8 py-4 bg-gradient-to-br from-primary-container to-primary text-on-primary text-base font-bold rounded-full shadow-2xl shadow-primary/20 hover:scale-105 transition-transform">
                         Get Started Now
                     </button>
-                    <button className="px-10 py-5 border border-outline-variant/30 hover:bg-surface-bright/10 text-on-surface text-lg font-bold rounded-full transition-all">
+                    <button className="w-full sm:w-auto px-8 py-4 border border-outline-variant/30 hover:bg-surface-bright/10 text-on-surface text-base font-bold rounded-full transition-all">
                         View Services
                     </button>
                 </div>
