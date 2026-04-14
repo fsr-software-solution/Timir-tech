@@ -27,9 +27,9 @@ const WebDevelopmentService = () => {
                                 We don't just build websites; we engineer highly scalable, fiercely secure, and blazing-fast web applications. Transform your boldest ideas into market-leading digital realities with our elite full-stack experts.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-                                <button className="px-8 py-4 bg-primary hover:bg-primary-light text-on-primary font-bold rounded-full shadow-[0_0_30px_rgba(255,165,0,0.3)] hover:shadow-[0_0_40px_rgba(255,165,0,0.5)] hover:-translate-y-1 transition-all duration-300 text-lg">
+                                <a href="/#contact" className="px-8 py-4 bg-primary hover:bg-primary-light text-on-primary font-bold rounded-full shadow-[0_0_30px_rgba(255,165,0,0.3)] hover:shadow-[0_0_40px_rgba(255,165,0,0.5)] hover:-translate-y-1 transition-all duration-300 text-lg inline-block text-center">
                                     Start Your Web Project
-                                </button>
+                                </a>
                                 <button className="px-8 py-4 border border-outline-variant/30 hover:border-primary/50 hover:bg-surface-bright/5 text-on-surface font-bold rounded-full transition-all duration-300 text-lg flex items-center justify-center gap-2">
                                     View Success Stories <span className="material-symbols-outlined text-xl">arrow_forward</span>
                                 </button>
@@ -218,9 +218,9 @@ const WebDevelopmentService = () => {
                     <h2 className="headline text-4xl md:text-6xl font-bold mb-8">Ready to dominate your market?</h2>
                     <p className="text-xl text-on-surface-variant mb-12 leading-relaxed">Stop losing customers to slow, outdated digital experiences. Partner with Timir Tech and let us build the definitive platform your business deserves.</p>
                     <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                        <button className="px-10 py-5 bg-white text-black text-lg font-black rounded-full shadow-[0_0_40px_rgba(255,255,255,0.3)] hover:scale-105 transition-all w-full sm:w-auto">
+                        <a href="/#contact" className="px-10 py-5 bg-white text-black text-lg font-black rounded-full shadow-[0_0_40px_rgba(255,255,255,0.3)] hover:scale-105 transition-all w-full sm:w-auto inline-block text-center">
                             Schedule Free Consultation
-                        </button>
+                        </a>
                     </div>
                     <p className="text-slate-500 text-sm mt-8 flex items-center justify-center gap-2">
                         <span className="material-symbols-outlined text-sm">lock</span> 100% Confidential. NDA available upon request.

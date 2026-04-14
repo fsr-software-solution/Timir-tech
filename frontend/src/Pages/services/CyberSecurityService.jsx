@@ -29,9 +29,9 @@ const CyberSecurityService = () => {
                                 A single breach can destroy years of reputation. We act as your elite red and blue teams—hunting vulnerabilities, testing network integrity, and hardening your cloud infrastructure against zero-day threats.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-                                <button className="px-8 py-4 bg-green-500 hover:bg-green-400 text-black font-bold font-mono rounded shadow-[0_0_20px_rgba(34,197,94,0.3)] hover:shadow-[0_0_30px_rgba(34,197,94,0.5)] transition-all duration-300 uppercase tracking-widest text-sm flex items-center justify-center gap-2">
+                                <a href="/#contact" className="px-8 py-4 bg-green-500 hover:bg-green-400 text-black font-bold font-mono rounded shadow-[0_0_20px_rgba(34,197,94,0.3)] hover:shadow-[0_0_30px_rgba(34,197,94,0.5)] transition-all duration-300 uppercase tracking-widest text-sm flex items-center justify-center gap-2 inline-block text-center">
                                     <span className="material-symbols-outlined text-lg">terminal</span> Init Audit
-                                </button>
+                                </a>
                                 <button className="px-8 py-4 border border-green-500/30 text-green-400 hover:bg-green-500/10 font-bold font-mono rounded transition-all duration-300 uppercase tracking-widest text-sm text-center">
                                     View Case Studies
                                 </button>
@@ -154,9 +154,9 @@ const CyberSecurityService = () => {
                     <p className="text-xl text-slate-400 mb-10 leading-relaxed max-w-2xl mx-auto">Reactive security is a failed strategy. Secure your users' trust and protect your proprietary data by fixing vulnerabilities today.</p>
 
                     <div className="inline-flex flex-col items-center gap-4">
-                        <button className="px-10 py-5 bg-transparent border-2 border-green-500 text-green-400 text-lg font-black font-mono hover:bg-green-500 hover:text-black transition-all">
+                        <a href="/#contact" className="px-10 py-5 bg-transparent border-2 border-green-500 text-green-400 text-lg font-black font-mono hover:bg-green-500 hover:text-black transition-all inline-block text-center">
                             EXECUTE_FREE_CONSULTATION()
-                        </button>
+                        </a>
                         <span className="text-xs text-slate-500 font-mono">ENCRYPTED END-TO-END COMMUNICATION</span>
                     </div>
                 </div>

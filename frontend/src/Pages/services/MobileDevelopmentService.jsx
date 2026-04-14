@@ -27,9 +27,9 @@ const MobileDevelopmentService = () => {
                                 Capture the global mobile market with lightning-fast, visually stunning iOS and Android applications. We transform your revolutionary ideas into top-charting, high-retention mobile experiences.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-                                <button className="px-8 py-4 bg-secondary hover:bg-secondary-light text-secondary-container-foreground font-black rounded-full shadow-[0_0_30px_rgba(56,189,248,0.3)] hover:-translate-y-1 transition-all duration-300 text-lg border border-secondary">
+                                <a href="/#contact" className="px-8 py-4 bg-secondary hover:bg-secondary-light text-secondary-container-foreground font-black rounded-full shadow-[0_0_30px_rgba(56,189,248,0.3)] hover:-translate-y-1 transition-all duration-300 text-lg border border-secondary inline-block text-center">
                                     Discuss Your App Idea
-                                </button>
+                                </a>
                                 <button className="px-8 py-4 border border-outline-variant/30 hover:border-secondary/50 hover:bg-surface-bright/5 text-on-surface font-bold rounded-full transition-all duration-300 text-lg flex items-center justify-center gap-2">
                                     Explore Portfolio <span className="material-symbols-outlined text-xl">arrow_forward</span>
                                 </button>
@@ -182,9 +182,9 @@ const MobileDevelopmentService = () => {
                 <div className="max-w-3xl mx-auto px-5 text-center relative z-10">
                     <h2 className="headline text-4xl md:text-5xl font-bold mb-6">Got a game-changing app idea?</h2>
                     <p className="text-xl text-on-surface-variant mb-10 leading-relaxed">Most app ideas fail due to poor execution and clunky UX. Don't risk your vision on amateur developers. Let Timir Tech engineer your enterprise-grade product.</p>
-                    <button className="px-10 py-5 bg-secondary text-white text-lg font-black rounded-full shadow-[0_0_40px_rgba(56,189,248,0.4)] hover:bg-white hover:text-black hover:scale-105 transition-all">
+                    <a href="/#contact" className="px-10 py-5 bg-secondary text-white text-lg font-black rounded-full shadow-[0_0_40px_rgba(56,189,248,0.4)] hover:bg-white hover:text-black hover:scale-105 transition-all inline-block text-center">
                         Request Free App Estimate
-                    </button>
+                    </a>
                 </div>
             </section>
         </div>

@@ -27,9 +27,9 @@ const GraphicsDesignService = () => {
                                 We don't just make things look pretty; we engineer visual psychology. Elevate your brand with award-winning visual identities, immersive UI/UX, and marketing collateral that drives undeniable conversion.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-                                <button className="px-8 py-4 bg-gradient-to-r from-tertiary to-pink-500 hover:from-tertiary-light hover:to-pink-400 text-white font-black rounded-full shadow-[0_0_30px_rgba(236,72,153,0.3)] hover:-translate-y-1 transition-all duration-300 text-lg">
+                                <a href="/#contact" className="px-8 py-4 bg-gradient-to-r from-tertiary to-pink-500 hover:from-tertiary-light hover:to-pink-400 text-white font-black rounded-full shadow-[0_0_30px_rgba(236,72,153,0.3)] hover:-translate-y-1 transition-all duration-300 text-lg inline-block text-center">
                                     Elevate Your Brand
-                                </button>
+                                </a>
                                 <button className="px-8 py-4 border border-outline-variant/30 hover:border-tertiary/50 hover:bg-surface-bright/5 text-on-surface font-bold rounded-full transition-all duration-300 text-lg flex items-center justify-center gap-2">
                                     View Lookbook <span className="material-symbols-outlined text-xl">palette</span>
                                 </button>

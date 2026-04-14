@@ -32,9 +32,9 @@ const VideoEditingService = () => {
                                 </div>
                             </div>
                             <div className="flex flex-wrap gap-4">
-                                <button className="px-8 py-4 bg-gradient-to-r from-red-600 to-red-500 hover:from-red-500 hover:to-red-400 text-white font-black rounded-full shadow-[0_0_30px_rgba(220,38,38,0.4)] hover:-translate-y-1 transition-all duration-300 text-lg">
+                                <a href="/#contact" className="px-8 py-4 bg-gradient-to-r from-red-600 to-red-500 hover:from-red-500 hover:to-red-400 text-white font-black rounded-full shadow-[0_0_30px_rgba(220,38,38,0.4)] hover:-translate-y-1 transition-all duration-300 text-lg inline-block text-center">
                                     Hire Our Editors
-                                </button>
+                                </a>
                             </div>
                         </div>
                         <div className="relative group perspective-1000">
