@@ -43,14 +43,7 @@ const Hero = () => {
                 <p className="font-body text-base sm:text-lg md:text-xl text-on-surface-variant max-w-3xl mx-auto mb-10 sm:mb-12 leading-relaxed px-4">
                     We engineer high-performance digital ecosystems that bridge the gap between human ambition and technological possibility.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center px-4">
-                    <button className="w-full sm:w-auto px-8 py-4 bg-gradient-to-br from-primary-container to-primary text-on-primary text-base font-bold rounded-full shadow-2xl shadow-primary/20 hover:scale-105 transition-transform">
-                        Get Started Now
-                    </button>
-                    <button className="w-full sm:w-auto px-8 py-4 border border-outline-variant/30 hover:bg-surface-bright/10 text-on-surface text-base font-bold rounded-full transition-all">
-                        View Services
-                    </button>
-                </div>
+               
             </div>
         </section>
     );
