@@ -20,10 +20,7 @@ const About = () => {
                                 <div className="text-[10px] sm:text-xs font-label uppercase tracking-widest opacity-60">Projects</div>
                             </div>
                            
-                            <div className="p-4 sm:p-6 rounded-3xl bg-surface-container-highest/40 border border-outline-variant/20 text-center">
-                                <div className="text-3xl sm:text-4xl font-headline font-bold text-primary mb-2">40+</div>
-                                <div className="text-[10px] sm:text-xs font-label uppercase tracking-widest opacity-60">Experts</div>
-                            </div>
+                         
                         </div>
                     </div>
                     <div className="relative">

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import agree from "../../assets/ethioagree.webp"
+import logo from "../../assets/logo.png"
 
 const Portfolio = () => {
     const projects = [
@@ -22,21 +24,21 @@ const Portfolio = () => {
         },
         {
             id: 3,
-            title: "Swift Logistics",
+            title: "professor agree",
             category: "SaaS",
-            description: "Cloud-based supply chain management and logistics tracking platform.",
-            image: "https://via.placeholder.com/800x600/1a1a1a/00eeff?text=Swift+Logistics",
-            liveUrl: "#",
-            githubUrl: "#"
+            description: "professor agree platform. for ethiopian farmer and agriculture professional,assit as 30+ ear agri professor",
+            image: agree,
+            liveUrl: "https://professoragree.com/",
+            githubUrl: "https://github.com/timir-tech/professoragree"
         },
         {
             id: 4,
-            title: "Aura Health",
-            category: "Healthcare",
-            description: "Patient wellness and medical record management system with advanced security.",
-            image: "https://via.placeholder.com/800x600/1a1a1a/bb86fc?text=Aura+Health",
-            liveUrl: "#",
-            githubUrl: "#"
+            title: "ehtiopan E-commerce",
+            category: "ecommerce",
+            description: "ethiopian ecommerce platfoem  samless trsansaction bitwen all ethiopians end to end",
+            image: logo,
+            liveUrl: "",
+            githubUrl: ""
         },
         {
             id: 5,

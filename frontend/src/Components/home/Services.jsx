@@ -16,7 +16,7 @@ const Services = () => {
                         </div>
                         <h3 className="headline text-2xl font-bold mb-4">Web Dev</h3>
                         <p className="text-on-surface-variant leading-relaxed mb-6">Next-gen web applications built with React, Vue, and high-performance backends.</p>
-                        <Link className="inline-flex items-center gap-2 text-primary font-bold group/link" to="/services/fullstack-web-development">
+                        <Link className="inline-flex items-center gap-2 text-primary font-bold group/link" to="/services/web-development-service">
                             Learn More <span className="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
                         </Link>
                     </div>
@@ -26,7 +26,7 @@ const Services = () => {
                         </div>
                         <h3 className="headline text-2xl font-bold mb-4">Mobile App</h3>
                         <p className="text-on-surface-variant leading-relaxed mb-6">Native and cross-platform mobile solutions that redefine user engagement.</p>
-                        <Link className="inline-flex items-center gap-2 text-primary font-bold group/link" to="/services/mobile-app-development">
+                        <Link className="inline-flex items-center gap-2 text-primary font-bold group/link" to="/services/mobile-development-service">
                             Learn More <span className="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
                         </Link>
                     </div>
@@ -56,7 +56,7 @@ const Services = () => {
                         </div>
                         <h3 className="headline text-2xl font-bold mb-4">Creative Studio</h3>
                         <p className="text-on-surface-variant leading-relaxed mb-6">High-end UI/UX, motion graphics, and cinematic video production.</p>
-                        <Link className="inline-flex items-center gap-2 text-primary font-bold group/link" to="/services/graphics-design">
+                        <Link className="inline-flex items-center gap-2 text-primary font-bold group/link" to="/services/graphics-design-service">
                             Learn More <span className="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
                         </Link>
                     </div>
@@ -66,7 +66,7 @@ const Services = () => {
                         </div>
                         <h3 className="headline text-2xl font-bold mb-4">Cyber Security</h3>
                         <p className="text-on-surface-variant leading-relaxed mb-6">Fortifying your digital assets with advanced encryption and protocols.</p>
-                        <Link className="inline-flex items-center gap-2 text-primary font-bold group/link" to="/services/cyber-security">
+                        <Link className="inline-flex items-center gap-2 text-primary font-bold group/link" to="/services/cyber-security-service">
                             Learn More <span className="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
                         </Link>
                     </div>

@@ -21,7 +21,13 @@ const Contact = () => {
                                 <span className="text-gradient">Digital Legacy</span>
                             </h3>
                             <p className="text-on-surface-variant text-lg leading-relaxed max-w-lg">
-                                Have a vision? We have the technical mastery to bring it to life. Reach out and let's start a conversation about your next big success.
+                           Do you want any of our service? We are interesting to deliver the service. You can contact us by using provided form  our support team will respond soon.
+                         <p>  If you want  any of listed service or any other tech related service ,Timir tech is your first choose.</p>
+                          <p> We are here to help you to grow your business with our technology solutions.
+                           </p> </p>
+                            <p>
+                            ቢዝንስወን ለማዘመን፤ በአለም መድረክ፤
+                           <p>አያስቡ፤ አለልወት ጥምር ቴክ።</p>
                             </p>
                         </div>
 
@@ -74,10 +80,14 @@ const Contact = () => {
                                 <div className="space-y-2">
                                     <label className="text-xs font-bold uppercase tracking-widest opacity-60 ml-1">Project Type</label>
                                     <select className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-6 focus:outline-none focus:border-primary/50 transition-all text-on-surface appearance-none cursor-pointer">
-                                        <option className="bg-slate-900">Web Engineering</option>
-                                        <option className="bg-slate-900">Mobile Solution</option>
-                                        <option className="bg-slate-900">Product Design</option>
+                                        <option className="bg-slate-900"> full stack Web development</option>
+                                        <option className="bg-slate-900">Mobile app development</option>
+                                        <option className="bg-slate-900">graphics Design</option>
+                                        <option className="bg-slate-900">video editig</option>
+                                        <option className="bg-slate-900">cyber security related</option>
                                         <option className="bg-slate-900">Learning Bootcamp</option>
+                                       <option className="bg-slate-900">other issue</option>
+
                                     </select>
                                 </div>
 
