@@ -11,7 +11,7 @@ const CookiePolicy = () => {
                 <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-[128px] -z-10 pointer-events-none"></div>
                 <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-teal-500/10 rounded-full blur-[128px] -z-10 pointer-events-none"></div>
 
-                <h1 className="text-4xl md:text-5xl font-black text-white mb-6">Cookie <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">Policy</span></h1>
+                <h3 className="text-2xl md:text-3xl font-black text-white mb-6">Cookie <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">Policy</span></h3>
                 <p className="text-slate-400 mb-10 text-lg">Last updated: April 2026</p>
 
                 <div className="space-y-8 text-base leading-relaxed">

@@ -37,13 +37,13 @@ const Hero = () => {
                     <span className="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span>
                     <span className="text-[10px] sm:text-xs font-label uppercase tracking-[0.2em] text-on-surface-variant">The Future is Here</span>
                 </div>
-                <h3 className="headline text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6 sm:mb-8 max-w-5xl mx-auto leading-[1.2] sm:leading-[1.1] px-2">
+                <h3 className="headline text-xl sm:text-3xl md:text-4xl font-bold tracking-tight mb-6 sm:mb-8 max-w-5xl mx-auto leading-[1.2] sm:leading-[1.1] px-2">
                     Building the <span className="text-gradient">Future</span> with Technology
                 </h3>
                 <p className="font-body text-base sm:text-lg md:text-xl text-on-surface-variant max-w-3xl mx-auto mb-10 sm:mb-12 leading-relaxed px-4">
                     We engineer high-performance digital ecosystems that bridge the gap between human ambition and technological possibility.
                 </p>
-               
+
             </div>
         </section>
     );

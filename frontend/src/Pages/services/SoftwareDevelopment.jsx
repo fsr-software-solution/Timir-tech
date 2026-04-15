@@ -17,19 +17,17 @@ const SoftwareDevelopment = () => {
                 <span className="material-symbols-outlined text-primary text-sm">terminal</span>
                 <span className="text-xs font-label uppercase tracking-[0.2em] text-on-surface-variant">Software Engineering</span>
               </div>
-              <h1 className="headline text-2xl sm:text-4xl md:text-6xl font-bold mb-6 leading-tight px-2">
+              <h3 className="headline text-xl sm:text-2xl md:text-3xl font-bold mb-6 leading-tight px-2">
                 Software <span className="text-gradient">Development</span>
-              </h1>
+              </h3>
               <p className="text-lg text-on-surface-variant leading-relaxed mb-8">
-                We architect and build enterprise-grade software solutions that power businesses at scale. From desktop applications to distributed cloud systems, our engineering team delivers robust, maintainable code.
+                We architect and build enterprise-grade software solutions that power your businesses at scale wordwide visible. From desktop applications to distributed cloud systems, our Timir tech developer  team delivers robust, maintainable software .
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="/#contact" className="px-8 py-4 bg-gradient-to-br from-primary-container to-primary text-on-primary font-bold rounded-full shadow-2xl shadow-primary/20 hover:scale-105 transition-transform inline-block text-center">
-                  Start Your Project
+                  Start scaling up your businesses   contact us
                 </a>
-                <button className="px-8 py-4 border border-outline-variant/30 hover:bg-surface-bright/10 text-on-surface font-bold rounded-full transition-all">
-                  View Case Studies
-                </button>
+
               </div>
             </div>
             <div className="relative">
@@ -63,7 +61,7 @@ const SoftwareDevelopment = () => {
       <section className="py-16 md:py-24 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
-            {['Python', 'Java', 'C++', 'Rust', 'Go', 'TypeScript', '.NET', 'Kotlin'].map((tech, i) => (
+            {['Python', 'Javascript', 'Go', 'TypeScript', 'Node.js', 'java'].map((tech, i) => (
               <div key={i} className="glass-card p-4 sm:p-6 rounded-2xl text-center group hover:border-primary/40 transition-all">
                 <span className="material-symbols-outlined text-primary text-3xl mb-3 block group-hover:scale-110 transition-transform" style={{ fontVariationSettings: "'FILL' 1" }}>code</span>
                 <div className="font-bold text-on-surface">{tech}</div>

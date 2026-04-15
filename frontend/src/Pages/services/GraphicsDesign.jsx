@@ -17,19 +17,17 @@ const GraphicsDesign = () => {
                 <span className="material-symbols-outlined text-primary text-sm">palette</span>
                 <span className="text-xs font-label uppercase tracking-[0.2em] text-on-surface-variant">Creative Academy</span>
               </div>
-              <h1 className="headline text-2xl sm:text-4xl md:text-6xl font-bold mb-6 leading-tight px-2">
+              <h3 className="headline text-xl sm:text-2xl md:text-3xl font-bold mb-6 leading-tight px-2">
                 Graphics <span className="text-gradient">Design</span> Academy
-              </h1>
+              </h3>
               <p className="text-lg text-on-surface-variant leading-relaxed mb-8">
                 Master the principles of design thinking and user experience. From wireframing to high-fidelity prototypes, build products that are as beautiful as they are functional.
               </p>
               <div className="flex flex-wrap gap-4">
-                <button className="px-8 py-4 bg-gradient-to-br from-primary-container to-primary text-on-primary font-bold rounded-full shadow-2xl shadow-primary/20 hover:scale-105 transition-transform">
+                <a href="http://marelign-yimer.vercel.app" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-gradient-to-br from-primary-container to-primary text-on-primary font-bold rounded-full shadow-2xl shadow-primary/20 hover:scale-105 transition-transform inline-block">
                   Apply Now
-                </button>
-                <button className="px-8 py-4 border border-outline-variant/30 hover:bg-surface-bright/10 text-on-surface font-bold rounded-full transition-all">
-                  View Student Work
-                </button>
+                </a>
+               
               </div>
             </div>
             <div className="relative">

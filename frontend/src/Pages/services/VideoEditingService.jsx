@@ -19,12 +19,12 @@ const VideoEditingService = () => {
                                 <span className="material-symbols-outlined text-red-500 text-sm animate-pulse flex">movie_creation</span>
                                 <span className="text-xs font-label uppercase tracking-[0.25em] text-on-surface-variant font-black">Post Production Studio</span>
                             </div>
-                            <h1 className="headline text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-[1.1] tracking-tight">
+                            <h3 className="headline text-2xl sm:text-3xl md:text-4xl font-bold mb-6 leading-[1.1] tracking-tight">
                                 Cinematic <br className="hidden md:block" />
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-amber-500">Visual Storytelling</span>
-                            </h1>
+                            </h3>
                             <p className="text-lg md:text-xl text-on-surface-variant leading-relaxed mb-10 max-w-xl">
-                                We transform raw footage into captivating narratives that demand attention. From high-retention social media edits to premium corporate documentaries and intricate motion graphics, we control the timeline.
+                                We transform raw footage  videos and photos into captivating narratives that demand attention. From high-retention social media edits to premium corporate documentaries and intricate motion graphics, we control the timeline.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 border-l-4 border-red-500 pl-6 mb-10 py-2">
                                 <div className="text-slate-300 italic text-lg max-w-md">
@@ -33,7 +33,7 @@ const VideoEditingService = () => {
                             </div>
                             <div className="flex flex-wrap gap-4">
                                 <a href="/#contact" className="px-8 py-4 bg-gradient-to-r from-red-600 to-red-500 hover:from-red-500 hover:to-red-400 text-white font-black rounded-full shadow-[0_0_30px_rgba(220,38,38,0.4)] hover:-translate-y-1 transition-all duration-300 text-lg inline-block text-center">
-                                    Hire Our Editors
+                                    contact Our Editors
                                 </a>
                             </div>
                         </div>
@@ -93,7 +93,7 @@ const VideoEditingService = () => {
                     <div className="text-center mb-20">
                         <h2 className="text-red-500 font-bold tracking-[0.2em] uppercase text-sm mb-4">Post-Production Services</h2>
                         <h3 className="headline text-4xl md:text-5xl font-bold mb-6">Editing for Every Platform</h3>
-                        <p className="text-on-surface-variant max-w-3xl mx-auto text-lg leading-relaxed">We understand that a TikTok reel requires vastly different pacing than a corporate documentary. Our editors specialize in platform-specific narrative structures.</p>
+                        <p className="text-on-surface-variant max-w-3xl mx-auto text-lg leading-relaxed">We understand that a TikTok ,instagram,youtube,linkdin and other reel requires vastly different pacing than a corporate documentary. Our editors specialize in platform-specific narrative structures.</p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">

@@ -5,7 +5,7 @@ const Testimonials = () => {
         <section className="py-16 md:py-32 bg-surface-container-lowest">
             <div className="max-w-7xl mx-auto px-8">
                 <div className="text-center mb-24">
-                    <h2 className="headline text-4xl font-bold mb-4">Trusted by Visionaries</h2>
+                    <h3 className="headline text-xl sm:text-2xl font-bold mb-4">Trusted by Visionaries</h3>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div className="glass-card p-10 rounded-[2.5rem]">

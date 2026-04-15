@@ -19,20 +19,18 @@ const WebDevelopmentService = () => {
                                 <span className="material-symbols-outlined text-primary text-sm animate-pulse flex">language</span>
                                 <span className="text-xs font-label uppercase tracking-[0.25em] text-on-surface-variant font-black">Enterprise Web Engineering</span>
                             </div>
-                            <h1 className="headline text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-[1.1] tracking-tight">
+                            <h3 className="headline text-2xl sm:text-3xl md:text-4xl font-bold mb-6 leading-[1.1] tracking-tight">
                                 Architecting <br className="hidden md:block" />
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-amber-300">Digital Dominance</span>
-                            </h1>
+                            </h3>
                             <p className="text-lg md:text-xl text-on-surface-variant leading-relaxed mb-10 max-w-xl">
-                                We don't just build websites; we engineer highly scalable, fiercely secure, and blazing-fast web applications. Transform your boldest ideas into market-leading digital realities with our elite full-stack experts.
+                                We don't just build websites; we engineer highly scalable,fast,worldwide visible and fiercely secure,  web applications. Transform your boldest ideas into market-leading digital realities with our elite full-stack experts.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
                                 <a href="/#contact" className="px-8 py-4 bg-primary hover:bg-primary-light text-on-primary font-bold rounded-full shadow-[0_0_30px_rgba(255,165,0,0.3)] hover:shadow-[0_0_40px_rgba(255,165,0,0.5)] hover:-translate-y-1 transition-all duration-300 text-lg inline-block text-center">
                                     Start Your Web Project
                                 </a>
-                                <button className="px-8 py-4 border border-outline-variant/30 hover:border-primary/50 hover:bg-surface-bright/5 text-on-surface font-bold rounded-full transition-all duration-300 text-lg flex items-center justify-center gap-2">
-                                    View Success Stories <span className="material-symbols-outlined text-xl">arrow_forward</span>
-                                </button>
+
                             </div>
                         </div>
                         <div className="relative group perspective-1000 hidden lg:block">
@@ -93,9 +91,9 @@ const WebDevelopmentService = () => {
                         {[
                             {
                                 icon: 'web_asset',
-                                title: 'Custom Web Apps',
-                                desc: 'We map your unique business logic into beautifully designed, highly functional bespoke applications. Leave off-the-shelf limitations behind and own a platform tailored solely for you.',
-                                tags: ['React', 'Vue', 'SPA/MPA']
+                                title: 'small,midiume to larg businesses',
+                                desc: 'We make your unique business logic into beautifully designed, highly functional bespoke applications. Leave off-the-shelf limitations behind and own a platform tailored solely for you.',
+                                tags: ['hotel', 'shoop', 'hospital', 'schoole', 'e-commerce', '...', 'ለሁሉም ቢዝነሶች']
                             },
                             {
                                 icon: 'shopping_cart_checkout',

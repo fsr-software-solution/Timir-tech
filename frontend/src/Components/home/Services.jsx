@@ -6,7 +6,7 @@ const Services = () => {
         <section className="py-12 sm:py-16 md:py-32 relative overflow-hidden" id="services">
             <div className="max-w-7xl mx-auto px-5 sm:px-8">
                 <div className="text-center mb-16 sm:mb-24 px-2">
-                    <h2 className="headline text-3xl sm:text-4xl md:text-6xl font-bold mb-6">Our Ecosystem</h2>
+                    <h3 className="headline text-2xl sm:text-3xl md:text-4xl font-bold mb-6">Our Ecosystem</h3>
                     <p className="text-on-surface-variant max-w-2xl mx-auto text-sm sm:text-base">From conceptual architecture to deployment, we provide end-to-end technical mastery.</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">

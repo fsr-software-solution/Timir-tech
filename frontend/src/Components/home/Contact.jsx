@@ -16,10 +16,10 @@ const Contact = () => {
                                 <span className="material-symbols-outlined text-primary text-sm">alternate_email</span>
                                 <span className="text-xs font-label uppercase tracking-[0.2em] text-primary">Get in Touch</span>
                             </div>
-                            <h2 className="headline text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                            <h3 className="headline text-2xl md:text-3xl font-bold mb-6 leading-tight">
                                 Let's Build Your <br />
                                 <span className="text-gradient">Digital Legacy</span>
-                            </h2>
+                            </h3>
                             <p className="text-on-surface-variant text-lg leading-relaxed max-w-lg">
                                 Have a vision? We have the technical mastery to bring it to life. Reach out and let's start a conversation about your next big success.
                             </p>
@@ -44,7 +44,7 @@ const Contact = () => {
                         </div>
 
                         <div className="flex gap-4 pt-4 border-t border-white/5">
-                          
+
                         </div>
                     </div>
 

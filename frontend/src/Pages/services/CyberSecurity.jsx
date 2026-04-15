@@ -20,19 +20,17 @@ const CyberSecurity = () => {
                                 <span className="material-symbols-outlined text-error text-sm">shield_lock</span>
                                 <span className="text-xs font-label uppercase tracking-[0.2em] text-error">Elite Defense Training</span>
                             </div>
-                            <h1 className="headline text-2xl sm:text-4xl md:text-6xl font-bold mb-6 leading-tight px-2">
+                            <h3 className="headline text-xl sm:text-2xl md:text-3xl font-bold mb-6 leading-tight px-2">
                                 Ethical Hacking & <span className="text-gradient-error">Cyber Security</span>
-                            </h1>
+                            </h3>
                             <p className="text-lg text-on-surface-variant leading-relaxed mb-8">
                                 Learn to think like a hacker to protect organizations. From network security to advanced penetration testing, master the tools and techniques used by industry experts.
                             </p>
                             <div className="flex flex-wrap gap-4">
-                                <button className="px-8 py-4 bg-gradient-to-br from-error to-error-container text-on-error font-bold rounded-full shadow-2xl shadow-error/20 hover:scale-105 transition-transform">
+                                <a href="http://marelign-yimer.vercel.app" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-gradient-to-br from-error to-error-container text-on-error font-bold rounded-full shadow-2xl shadow-error/20 hover:scale-105 transition-transform inline-block">
                                     Join the Mission
-                                </button>
-                                <button className="px-8 py-4 border border-outline-variant/30 hover:bg-surface-bright/10 text-on-surface font-bold rounded-full transition-all">
-                                    Lab Access Info
-                                </button>
+                                </a>
+                              
                             </div>
                         </div>
 

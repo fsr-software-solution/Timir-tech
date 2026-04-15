@@ -21,10 +21,10 @@ const CyberSecurityService = () => {
                                 <span className="material-symbols-outlined text-green-400 text-sm">enhanced_encryption</span>
                                 <span className="text-xs font-bold uppercase tracking-[0.2em] text-green-400">Information Security</span>
                             </div>
-                            <h1 className="headline text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-[1.1] tracking-tight">
+                            <h3 className="headline text-2xl sm:text-3xl md:text-4xl font-bold mb-6 leading-[1.1] tracking-tight">
                                 Bulletproof <br className="hidden md:block" />
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600">Cyber Defense</span>
-                            </h1>
+                            </h3>
                             <p className="text-lg md:text-xl text-on-surface-variant leading-relaxed mb-10 max-w-xl">
                                 A single breach can destroy years of reputation. We act as your elite red and blue teams—hunting vulnerabilities, testing network integrity, and hardening your cloud infrastructure against zero-day threats.
                             </p>

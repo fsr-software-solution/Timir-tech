@@ -19,10 +19,10 @@ const GraphicsDesignService = () => {
                                 <span className="material-symbols-outlined text-tertiary text-sm animate-pulse flex">auto_awesome</span>
                                 <span className="text-xs font-label uppercase tracking-[0.25em] text-on-surface-variant font-black">Creative Agency</span>
                             </div>
-                            <h1 className="headline text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-[1.1] tracking-tight">
+                            <h3 className="headline text-2xl sm:text-3xl md:text-4xl font-bold mb-6 leading-[1.1] tracking-tight">
                                 Design That <br className="hidden md:block" />
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-tertiary to-pink-400">Commands Attention</span>
-                            </h1>
+                            </h3>
                             <p className="text-lg md:text-xl text-on-surface-variant leading-relaxed mb-10 max-w-xl">
                                 We don't just make things look pretty; we engineer visual psychology. Elevate your brand with award-winning visual identities, immersive UI/UX, and marketing collateral that drives undeniable conversion.
                             </p>

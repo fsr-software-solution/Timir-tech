@@ -19,20 +19,18 @@ const MobileDevelopmentService = () => {
                                 <span className="material-symbols-outlined text-secondary text-sm animate-pulse flex">smartphone</span>
                                 <span className="text-xs font-label uppercase tracking-[0.25em] text-on-surface-variant font-black">Mobile Innovation</span>
                             </div>
-                            <h1 className="headline text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-[1.1] tracking-tight">
+                            <h3 className="headline text-2xl sm:text-3xl md:text-4xl font-bold mb-6 leading-[1.1] tracking-tight">
                                 Crafting <br className="hidden md:block" />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-blue-400">Award-Winning</span> Apps
-                            </h1>
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-blue-400">Award-Winning</span> Mobile Apps
+                            </h3>
                             <p className="text-lg md:text-xl text-on-surface-variant leading-relaxed mb-10 max-w-xl">
-                                Capture the global mobile market with lightning-fast, visually stunning iOS and Android applications. We transform your revolutionary ideas into top-charting, high-retention mobile experiences.
+                                Capture the global mobile market with lightning-fast, visually stunning iOS and Android applications. We transform your revolutionary ideas into top-charting, high-retention mobile  application and make accessible worldwide.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
                                 <a href="/#contact" className="px-8 py-4 bg-secondary hover:bg-secondary-light text-secondary-container-foreground font-black rounded-full shadow-[0_0_30px_rgba(56,189,248,0.3)] hover:-translate-y-1 transition-all duration-300 text-lg border border-secondary inline-block text-center">
                                     Discuss Your App Idea
                                 </a>
-                                <button className="px-8 py-4 border border-outline-variant/30 hover:border-secondary/50 hover:bg-surface-bright/5 text-on-surface font-bold rounded-full transition-all duration-300 text-lg flex items-center justify-center gap-2">
-                                    Explore Portfolio <span className="material-symbols-outlined text-xl">arrow_forward</span>
-                                </button>
+
                             </div>
                         </div>
                         <div className="relative flex justify-center lg:justify-end perspective-1000">

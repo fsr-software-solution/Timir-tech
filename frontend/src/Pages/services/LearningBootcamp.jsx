@@ -34,19 +34,17 @@ const LearningBootcamp = () => {
                 <span className="material-symbols-outlined text-primary text-sm">school</span>
                 <span className="text-xs font-label uppercase tracking-[0.2em] text-on-surface-variant">Education Hub</span>
               </div>
-              <h1 className="headline text-2xl sm:text-4xl md:text-6xl font-bold mb-6 leading-tight px-2">
+              <h3 className="headline text-xl sm:text-2xl md:text-3xl font-bold mb-6 leading-tight px-2">
                 Learning <span className="text-gradient">Bootcamp</span>
-              </h1>
+              </h3>
               <p className="text-lg text-on-surface-variant leading-relaxed mb-8">
                 Intensive, hands-on training programs  from scrach computer basic upto  designed to transform absolute beginners into industry-ready professionals. Learn from active and exprianced teture  building real-world products, choosing the format that perfectly fits your schedule.
               </p>
               <div className="flex flex-wrap gap-4">
-                <button className="px-8 py-4 bg-gradient-to-br from-primary-container to-primary text-on-primary font-bold rounded-full shadow-2xl shadow-primary/20 hover:scale-105 transition-transform">
+                <a href="http://marelign-yimer.vercel.app" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-gradient-to-br from-primary-container to-primary text-on-primary font-bold rounded-full shadow-2xl shadow-primary/20 hover:scale-105 transition-transform inline-block">
                   Enroll Now
-                </button>
-                <button className="px-8 py-4 border border-outline-variant/30 hover:bg-surface-bright/10 text-on-surface font-bold rounded-full transition-all">
-                  View Curriculum
-                </button>
+                </a>
+
               </div>
             </div>
             <div className="relative group min-h-[480px] lg:min-h-[520px]">
@@ -66,10 +64,10 @@ const LearningBootcamp = () => {
                   <div
                     key={i}
                     className={`absolute inset-0 p-8 flex flex-col transition-all duration-700 ease-in-out ${i === activeSlide
-                        ? 'opacity-100 translate-y-0 pointer-events-auto z-10'
-                        : i < activeSlide
-                          ? 'opacity-0 -translate-y-16 pointer-events-none -z-10'
-                          : 'opacity-0 translate-y-16 pointer-events-none -z-10'
+                      ? 'opacity-100 translate-y-0 pointer-events-auto z-10'
+                      : i < activeSlide
+                        ? 'opacity-0 -translate-y-16 pointer-events-none -z-10'
+                        : 'opacity-0 translate-y-16 pointer-events-none -z-10'
                       }`}
                   >
                     {slide.type === 'intro' ? (
@@ -178,8 +176,8 @@ const LearningBootcamp = () => {
           <h2 className="headline text-3xl md:text-4xl font-bold mb-12 text-center">Training Programs</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { icon: 'code', title: 'Web Development', desc: 'Master modern website development from basic frontend frontends to robust backends.', duration: '12 Weeks + projects', path: '/services/fullstack-web-development' },
-              { icon: 'smartphone', title: 'Mobile Development', desc: 'Build premium native and cross-platform applications for iOS and Android.', duration: '15+ Weeks', path: '/services/mobile-app-development' },
+              { icon: 'code', title: 'full stack Web Development', desc: 'Master modern website development from basic frontend frontends to robust backends.', duration: '12 Weeks + projects', path: '/services/fullstack-web-development' },
+              { icon: 'smartphone', title: 'Mobile app Development', desc: 'Build premium native and cross-platform applications for iOS and Android.', duration: '15+ Weeks', path: '/services/mobile-app-development' },
               { icon: 'palette', title: 'Graphics Design', desc: 'Visual storytelling, brand identity, and high-end graphic assets.poster ad logo design', duration: '8 Weeks', path: '/services/graphics-design' },
               { icon: 'shield_lock', title: 'Cyber Security', desc: 'Ethical hacking, network security, and professional penetration testing.', duration: '12 Weeks', path: '/services/cyber-security' },
               { icon: 'videocam', title: 'Video Editing', desc: 'Professional cinematic editing, motion graphics, and digital media production.social medai prodcution', duration: '10 Weeks', path: '/services/video-editing' },
@@ -208,10 +206,10 @@ const LearningBootcamp = () => {
           <h2 className="headline text-3xl md:text-4xl font-bold mb-12 text-center">Why Train With Us</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {[
-              { icon: 'engineering', val: '95%', label: 'Job Placement' },
-              { icon: 'groups', val: '500+', label: 'Graduates' },
-              { icon: 'workspace_premium', val: '4.9/5', label: 'Rating' },
-              { icon: 'handshake', val: '50+', label: 'Hiring Partners' },
+              { icon: 'engineering', val: '100%', label: 'Job  readyness' },
+              { icon: 'groups', val: '6+', label: 'services' },
+              { icon: 'workspace_premium', val: '10-10', label: 'experts' },
+              { icon: 'handshake', val: '', label: 'open avalaibality' },
             ].map((stat, i) => (
               <div key={i} className="glass-card p-6 rounded-3xl text-center">
                 <span className="material-symbols-outlined text-primary text-3xl mb-3 block" style={{ fontVariationSettings: "'FILL' 1" }}>{stat.icon}</span>
