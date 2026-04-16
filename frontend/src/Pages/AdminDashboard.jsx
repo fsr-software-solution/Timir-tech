@@ -16,7 +16,7 @@ const AdminDashboard = () => {
             }
 
             try {
-                const response = await fetch('http://localhost:5000/api/messages', {
+                const response = await fetch('https://timir-tech.vercel.app/api/messages', {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }
@@ -47,7 +47,7 @@ const AdminDashboard = () => {
 
         const token = localStorage.getItem('adminToken');
         try {
-            const response = await fetch(`http://localhost:5000/api/messages/${id}`, {
+            const response = await fetch(`https://timir-tech.vercel.app//api/messages/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'Authorization': `Bearer ${token}`
