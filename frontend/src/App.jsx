@@ -4,7 +4,7 @@ import './App.css';
 import Navbar from './Components/Layout/Navbar';
 import Footer from './Components/Layout/Footer';
 import ScrollToTop from './Components/Layout/ScrollToTop';
-import Home from './pages/Home';
+// import Home from './pages/Home';
 import SoftwareDevelopment from './Pages/services/SoftwareDevelopment';
 import FullStackWebDev from './Pages/services/FullStackWebDev';
 import MobileAppDev from './Pages/services/MobileAppDev';
