@@ -20,7 +20,7 @@ const Contact = () => {
         setStatus({ type: '', message: '' });
 
         try {
-            const response = await fetch('http://localhost:5000/api/messages', {
+            const response = await fetch('https://timir-tech.vercel.app/api/messages', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
