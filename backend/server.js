@@ -5,8 +5,10 @@ import connectDB from './config/database.js'
 import messageRoutes from './routes/messageRoutes.js'
 import adminRoutes from './routes/adminRoutes.js'
 
-connectDB()
 dotenv.config()
+
+// Connect to database
+connectDB()
 
 const PORT = process.env.PORT || 5000
 const app = express()
