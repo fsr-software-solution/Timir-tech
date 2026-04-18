@@ -185,16 +185,17 @@ const WebDevelopmentService = () => {
                         <h3 className="headline text-4xl md:text-5xl font-bold">How We Forge Perfection</h3>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
                         {[
                             { num: '01', title: 'Discovery & Blueprint', desc: 'We dive deep into your business goals, mapping out user journeys, database schemas, and system architecture blueprints before a single line of code is written.' },
                             { num: '02', title: 'UI/UX Design', desc: 'Our creative team designs high-fidelity, interactive prototypes, ensuring the user experience is intuitive, accessible, and aligned perfectly with your brand identity.' },
                             { num: '03', title: 'Agile Engineering', desc: 'Our full-stack engineers build your platform in swift, iterative sprints. You receive regular updates and working demos to stay perfectly in the loop.' },
                             { num: '04', title: 'QA & Deployment', desc: 'Rigorous automated and manual testing guarantees a bug-free launch. We set up CI/CD pipelines and scalable cloud infrastructure for a flawless go-live.' },
+                            { num: '05', title: 'Test & Maintenance', desc: 'Continuous performance monitoring, security updates, and feature enhancements to ensure your platform remains at the cutting edge of your industry.' },
                         ].map((step, i) => (
                             <div key={i} className="relative">
                                 {/* Connecting line for desktop */}
-                                {i < 3 && <div className="hidden md:block absolute top-[40px] left-[60%] w-full h-[2px] bg-gradient-to-r from-primary/30 to-transparent z-0"></div>}
+                                {i < 4 && <div className="hidden lg:block absolute top-[40px] left-[60%] w-full h-[2px] bg-gradient-to-r from-primary/30 to-transparent z-0"></div>}
 
                                 <div className="relative z-10 p-6 rounded-3xl bg-surface-container-highest border border-white/5 shadow-xl hover:shadow-[0_0_30px_rgba(255,165,0,0.1)] transition-all h-full flex flex-col group">
                                     <div className="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-b from-primary/50 to-transparent mb-6 group-hover:scale-110 transition-transform origin-left">

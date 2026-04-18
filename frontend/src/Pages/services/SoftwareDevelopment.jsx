@@ -75,15 +75,19 @@ const SoftwareDevelopment = () => {
       <section className="py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-5 sm:px-8">
           <h2 className="headline text-3xl md:text-4xl font-bold mb-12 text-center">Our Development Process</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8">
             {[
               { icon: 'search', title: 'Discovery', desc: 'We analyze your requirements and define the optimal architecture.' },
               { icon: 'architecture', title: 'Design', desc: 'Blueprint creation with UML, ERDs, and system design documents.' },
               { icon: 'build', title: 'Build', desc: 'Agile sprints with continuous integration and code reviews.' },
               { icon: 'rocket_launch', title: 'Deploy', desc: 'CI/CD pipelines, monitoring, and production release management.' },
+              { icon: 'support_agent', title: 'Testing & Maintenance', desc: 'Proactive monitoring, security audits, and ongoing feature updates.' },
             ].map((step, i) => (
               <div key={i} className="relative">
-                <div className="glass-card p-8 rounded-3xl text-center hover:border-primary/40 transition-all h-full">
+                {/* Connecting line for desktop */}
+                {i < 4 && <div className="hidden lg:block absolute top-[60px] left-[60%] w-full h-[1px] bg-gradient-to-r from-primary/30 to-transparent z-0"></div>}
+
+                <div className="glass-card p-8 rounded-3xl text-center hover:border-primary/40 transition-all h-full relative z-10">
                   <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <span className="material-symbols-outlined text-primary text-2xl">{step.icon}</span>
                   </div>
