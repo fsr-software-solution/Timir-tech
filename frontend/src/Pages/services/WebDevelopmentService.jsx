@@ -24,7 +24,7 @@ const WebDevelopmentService = () => {
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-amber-300">Digital Dominance</span>
                             </h3>
                             <p className="text-lg md:text-xl text-on-surface-variant leading-relaxed mb-10 max-w-xl">
-                                We don't just build websites; we engineer highly scalable,fast,worldwide visible and fiercely secure,  web applications. Transform your boldest ideas into market-leading digital realities with our elite full-stack experts.
+                                We don't just build websites; we engineer highly scalable, fast, worldwide visible, and fiercely secure web applications. Transform your boldest ideas into market-leading digital realities with our elite full-stack experts.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
                                 <a href="/#contact" className="px-8 py-4 bg-primary hover:bg-primary-light text-on-primary font-bold rounded-full shadow-[0_0_30px_rgba(255,165,0,0.3)] hover:shadow-[0_0_40px_rgba(255,165,0,0.5)] hover:-translate-y-1 transition-all duration-300 text-lg inline-block text-center">
@@ -91,9 +91,9 @@ const WebDevelopmentService = () => {
                         {[
                             {
                                 icon: 'web_asset',
-                                title: 'small,midiume to larg businesses',
+                                title: 'Small, Medium to Large Businesses',
                                 desc: 'We make your unique business logic into beautifully designed, highly functional bespoke applications. Leave off-the-shelf limitations behind and own a platform tailored solely for you.',
-                                tags: ['hotel', 'shoop', 'hospital', 'schoole', 'e-commerce', '...', 'ለሁሉም ቢዝነሶች']
+                                tags: ['hotels', 'shops', 'hospitals', 'schools', 'e-commerce', '...', 'ለሁሉም ቢዝነሶች']
                             },
                             {
                                 icon: 'shopping_cart_checkout',
@@ -163,7 +163,7 @@ const WebDevelopmentService = () => {
                             { name: 'MongoDB', icon: 'storage' },
                             { name: 'Docker', icon: 'view_in_ar' },
                             { name: 'AWS Cloud', icon: 'cloud' },
-                            { name: 'express', icon: 'speed' },
+                            { name: 'Express', icon: 'speed' },
                             { name: 'GraphQL', icon: 'hub' },
                             { name: 'Tailwind CSS', icon: 'palette' },
                             { name: 'Figma', icon: 'design_services' },

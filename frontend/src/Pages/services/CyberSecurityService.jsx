@@ -100,7 +100,7 @@ const CyberSecurityService = () => {
                                 icon: 'shield_locked',
                                 title: 'Cloud Security',
                                 code: 'SEC_OPS',
-                                desc: 'Securing AWS, GCP, and Azure environments. We implement Identity and Access Management (IAM) strict policies, VPC hardening, and encrypted at-rest/in-transit configurations.'
+                                desc: 'Securing AWS, GCP, and Azure environments. We implement strict Identity and Access Management (IAM) policies, VPC hardening, and encryption-at-rest/in-transit configurations.'
                             },
                             {
                                 icon: 'policy',
@@ -118,7 +118,7 @@ const CyberSecurityService = () => {
                                 icon: 'admin_panel_settings',
                                 title: 'DevSecOps Integration',
                                 code: 'CI_CD_SEC',
-                                desc: 'We embed security automated checks directly into your DevOps pipelines. Catching vulnerabilities during the build phase saves immense cost compared to post-production fixing.'
+                                desc: 'We embed automated security checks directly into your DevOps pipelines. Catching vulnerabilities during the build phase saves significant costs compared to post-production fixes.'
                             },
                             {
                                 icon: 'crisis_alert',

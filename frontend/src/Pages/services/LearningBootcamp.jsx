@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 const carouselSlides = [
   { type: 'intro' },
-  { type: 'program', icon: 'code', title: 'Web Development', desc: 'Master modern full stack website  developmnet from frontends to robust backends. and built market ready full stack projects with us', duration: '12 Weeks + 3 week project', color: 'text-blue-400', bgBorder: 'border-blue-500/20' },
-  { type: 'program', icon: 'smartphone', title: 'Mobile Development', desc: 'Build premium native and cross-platform mobile applications from scrach to advanced with effective project', duration: '15 Weeks', color: 'text-green-400', bgBorder: 'border-green-500/20' },
-  { type: 'program', icon: 'palette', title: 'Graphics Design', desc: 'Visual storytelling, brand identity, and high-end graphic assets.logo and poster design.', duration: '8 Weeks', color: 'text-purple-400', bgBorder: 'border-purple-500/20' },
+  { type: 'program', icon: 'code', title: 'Web Development', desc: 'Master modern full stack website development from frontends to robust backends and build market-ready projects with us.', duration: '12 Weeks + 3 week project', color: 'text-blue-400', bgBorder: 'border-blue-500/20' },
+  { type: 'program', icon: 'smartphone', title: 'Mobile Development', desc: 'Build premium native and cross-platform mobile applications from scratch to advanced with effective projects.', duration: '15 Weeks', color: 'text-green-400', bgBorder: 'border-green-500/20' },
+  { type: 'program', icon: 'palette', title: 'Graphics Design', desc: 'Visual storytelling, brand identity, and high-end graphic assets. Logo and poster design.', duration: '8 Weeks', color: 'text-purple-400', bgBorder: 'border-purple-500/20' },
   { type: 'program', icon: 'shield_lock', title: 'Cyber Security', desc: 'Ethical hacking, network security, and professional penetration testing.', duration: '12 Weeks', color: 'text-red-400', bgBorder: 'border-red-500/20' },
-  { type: 'program', icon: 'videocam', title: 'Video Editing', desc: 'Professional cinematic editing, motion graphics, and digital media. social medai vidoe editing ', duration: '10 Weeks', color: 'text-amber-400', bgBorder: 'border-amber-500/20' },
+  { type: 'program', icon: 'videocam', title: 'Video Editing', desc: 'Professional cinematic editing, motion graphics, and digital media. Social media video editing.', duration: '10 Weeks', color: 'text-amber-400', bgBorder: 'border-amber-500/20' },
 ];
 
 const LearningBootcamp = () => {
@@ -38,7 +38,7 @@ const LearningBootcamp = () => {
                 Learning <span className="text-gradient">Bootcamp</span>
               </h3>
               <p className="text-lg text-on-surface-variant leading-relaxed mb-8">
-                Intensive, hands-on training programs  from scrach computer basic upto  designed to transform absolute beginners into industry-ready professionals. Learn from active and exprianced teture  building real-world products, choosing the format that perfectly fits your schedule.
+                Intensive, hands-on training programs from computer basics up to advanced development, designed to transform absolute beginners into industry-ready professionals. Learn from active and experienced teachers building real-world products, choosing the format that perfectly fits your schedule.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="http://marelign-yimer.vercel.app" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-gradient-to-br from-primary-container to-primary text-on-primary font-bold rounded-full shadow-2xl shadow-primary/20 hover:scale-105 transition-transform inline-block">
@@ -176,11 +176,11 @@ const LearningBootcamp = () => {
           <h2 className="headline text-3xl md:text-4xl font-bold mb-12 text-center">Training Programs</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { icon: 'code', title: 'full stack Web Development', desc: 'Master modern website development from basic frontend frontends to robust backends.', duration: '12 Weeks + projects', path: '/services/fullstack-web-development' },
-              { icon: 'smartphone', title: 'Mobile app Development', desc: 'Build premium native and cross-platform applications for iOS and Android.', duration: '15+ Weeks', path: '/services/mobile-app-development' },
-              { icon: 'palette', title: 'Graphics Design', desc: 'Visual storytelling, brand identity, and high-end graphic assets.poster ad logo design', duration: '8 Weeks', path: '/services/graphics-design' },
+              { icon: 'code', title: 'Full Stack Web Development', desc: 'Master modern website development from basic frontend frontends to robust backends.', duration: '12 Weeks + projects', path: '/services/fullstack-web-development' },
+              { icon: 'smartphone', title: 'Mobile App Development', desc: 'Build premium native and cross-platform applications for iOS and Android.', duration: '15+ Weeks', path: '/services/mobile-app-development' },
+              { icon: 'palette', title: 'Graphics Design', desc: 'Visual storytelling, brand identity, and high-end graphic assets. Poster and logo design.', duration: '8 Weeks', path: '/services/graphics-design' },
               { icon: 'shield_lock', title: 'Cyber Security', desc: 'Ethical hacking, network security, and professional penetration testing.', duration: '12 Weeks', path: '/services/cyber-security' },
-              { icon: 'videocam', title: 'Video Editing', desc: 'Professional cinematic editing, motion graphics, and digital media production.social medai prodcution', duration: '10 Weeks', path: '/services/video-editing' },
+              { icon: 'videocam', title: 'Video Editing', desc: 'Professional cinematic editing, motion graphics, and digital media production. Social media production.', duration: '10 Weeks', path: '/services/video-editing' },
             ].map((prog, i) => (
               <div key={i} className="glass-card p-8 rounded-3xl group hover:border-primary/40 transition-all">
                 <div className="flex items-center justify-between mb-6">
@@ -206,10 +206,10 @@ const LearningBootcamp = () => {
           <h2 className="headline text-3xl md:text-4xl font-bold mb-12 text-center">Why Train With Us</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {[
-              { icon: 'engineering', val: '100%', label: 'Job  readyness' },
+              { icon: 'engineering', val: '100%', label: 'Job readiness' },
               { icon: 'groups', val: '6+', label: 'services' },
               { icon: 'workspace_premium', val: '10-10', label: 'experts' },
-              { icon: 'handshake', val: '', label: 'open avalaibality' },
+              { icon: 'handshake', val: '', label: 'open availability' },
             ].map((stat, i) => (
               <div key={i} className="glass-card p-6 rounded-3xl text-center">
                 <span className="material-symbols-outlined text-primary text-3xl mb-3 block" style={{ fontVariationSettings: "'FILL' 1" }}>{stat.icon}</span>

@@ -21,11 +21,11 @@ const SoftwareDevelopment = () => {
                 Software <span className="text-gradient">Development</span>
               </h3>
               <p className="text-lg text-on-surface-variant leading-relaxed mb-8">
-                We architect and build enterprise-grade software solutions that power your businesses at scale wordwide visible. From desktop applications to distributed cloud systems, our Timir tech developer  team delivers robust, maintainable software .
+                We architect and build enterprise-grade software solutions with worldwide visibility at scale. From desktop applications to distributed cloud systems, our Timir Tech development team delivers robust, maintainable software.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="/#contact" className="px-8 py-4 bg-gradient-to-br from-primary-container to-primary text-on-primary font-bold rounded-full shadow-2xl shadow-primary/20 hover:scale-105 transition-transform inline-block text-center">
-                  Start scaling up your businesses   contact us
+                  Scale Your Business - Contact Us
                 </a>
 
               </div>
@@ -61,7 +61,7 @@ const SoftwareDevelopment = () => {
       <section className="py-16 md:py-24 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
-            {['Python', 'Javascript', 'Go', 'TypeScript', 'Node.js', 'java'].map((tech, i) => (
+            {['Python', 'JavaScript', 'Go', 'TypeScript', 'Node.js', 'Java'].map((tech, i) => (
               <div key={i} className="glass-card p-4 sm:p-6 rounded-2xl text-center group hover:border-primary/40 transition-all">
                 <span className="material-symbols-outlined text-primary text-3xl mb-3 block group-hover:scale-110 transition-transform" style={{ fontVariationSettings: "'FILL' 1" }}>code</span>
                 <div className="font-bold text-on-surface">{tech}</div>

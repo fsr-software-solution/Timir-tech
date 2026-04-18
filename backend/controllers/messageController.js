@@ -8,7 +8,7 @@ const createMessage = async (req, res) => {
         const { name, email, projectType, message } = req.body;
 
         if (!name || !email || !projectType || !message) {
-            return res.status(400).json({ message: 'Please fill all fields' });
+            return res.status(400).json({ message: 'Please fill in all required fields' });
         }
 
         const newMessage = await Message.create({

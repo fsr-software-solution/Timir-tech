@@ -9,18 +9,18 @@ const About = () => {
                         <div className="absolute -top-10 -left-10 w-32 h-32 bg-primary/20 blur-3xl"></div>
                         <h3 className="headline text-2xl md:text-3xl font-bold mb-8">Redefining Tech <br /><span className="text-on-surface-variant/50">Boundaries</span></h3>
                         <p className="text-lg text-on-surface-variant mb-12 leading-loose">
-                            Timir Tech isn't just a software house. We are a collective of visionaries, developers, security specialist and designers dedicated to crafting the next generation of digital infrastructure.
+                            Timir Tech isn't just a software house. We are a collective of visionaries, developers, security specialists and designers dedicated to crafting the next generation of digital infrastructure.
                         </p>
-                        
-                        <p>wish to link all ehtiopian first businesses with secure technology</p>
-                        
+
+                        <p>wish to link all Ethiopian first businesses with secure technology</p>
+
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8">
                             <div className="p-4 sm:p-6 rounded-3xl bg-surface-container-highest/40 border border-outline-variant/20 text-center">
                                 <div className="text-3xl sm:text-4xl font-headline font-bold text-primary mb-2">20+</div>
                                 <div className="text-[10px] sm:text-xs font-label uppercase tracking-widest opacity-60">Projects</div>
                             </div>
-                           
-                         
+
+
                         </div>
                     </div>
                     <div className="relative">

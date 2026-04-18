@@ -24,7 +24,7 @@ const MobileDevelopmentService = () => {
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-blue-400">Award-Winning</span> Mobile Apps
                             </h3>
                             <p className="text-lg md:text-xl text-on-surface-variant leading-relaxed mb-10 max-w-xl">
-                                Capture the global mobile market with lightning-fast, visually stunning iOS and Android applications. We transform your revolutionary ideas into top-charting, high-retention mobile  application and make accessible worldwide.
+                                Capture the global mobile market with lightning-fast, visually stunning iOS and Android applications. We transform your revolutionary ideas into top-charting, high-retention mobile applications and make them accessible worldwide.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
                                 <a href="/#contact" className="px-8 py-4 bg-secondary hover:bg-secondary-light text-secondary-container-foreground font-black rounded-full shadow-[0_0_30px_rgba(56,189,248,0.3)] hover:-translate-y-1 transition-all duration-300 text-lg border border-secondary inline-block text-center">

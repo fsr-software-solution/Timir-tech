@@ -189,7 +189,7 @@ const GraphicsDesignService = () => {
             {/* Tools Section */}
             <section className="py-16 bg-surface-container-lowest">
                 <div className="max-w-7xl mx-auto px-4 text-center">
-                    <div className="text-sm font-bold text-slate-500 uppercase tracking-widest mb-8">Powe​red by Industry Standards</div>
+                    <div className="text-sm font-bold text-slate-500 uppercase tracking-widest mb-8">Powered by Industry Standards</div>
                     <div className="flex flex-wrap justify-center gap-6 opacity-60 grayscale hover:grayscale-0 transition-all duration-700">
                         {['Figma', 'Adobe Photoshop', 'Illustrator', 'After Effects', 'Spline 3D', 'Webflow', 'Framer Cortex'].map((tool, i) => (
                             <span key={i} className="text-lg md:text-xl font-black text-white">{tool}</span>

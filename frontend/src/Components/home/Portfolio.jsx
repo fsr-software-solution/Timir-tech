@@ -6,8 +6,8 @@ const Portfolio = () => {
     const projects = [
         {
             id: 1,
-            title: "Frelancer Hub",
-            category: "Frelancer Hub",
+            title: "Freelancer Hub",
+            category: "Freelancer Hub",
             description: "A platform for freelancers to connect with clients and showcase their work.",
             image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDaOWDKedLhcTdcfBmjJDjMTRHhlDrrdbfxllG2cQ_QcACzvtptMdJZi-IfyZ6S9Kifv8f5_vu_IelWxuD2QFzAmqVJvNpKiXpvpks3R0-cv1w8FX8AFBhVMDA52gUCoHzSnQ1ExW1kftcpe402FBgJo1fZB1lc7qAigQs2WPqm2lLK9xxvxJXGa6JvPYJz8Hcobp7nvbbnQmWHzMsDB4dwEzmZ1TXCC5V_DgzxyyM5Brg4FW5-rB6BINCcrxDO01HZYxnHaQRD1O08",
             liveUrl: "https://ethiopian-job-service.vercel.app/",
@@ -15,27 +15,27 @@ const Portfolio = () => {
         },
         {
             id: 2,
-            title: "ethio student assistant",
+            title: "Ethio Student Assistant",
             category: "Edu Tech",
-            description: "AI-powered learning platform for students. based on ethiopian curriculum.",
+            description: "AI-powered learning platform for students based on the Ethiopian curriculum.",
             image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCX7KX48UhYwmZoOO7d8pmMa1XoE1GUajN4egA_TvMy5C5HQV-g6DflvmOcDW7XA1FjRDBhGOSYyo2wIFZKQUzdQoD2-i_m40FO8OOtPqtcYaKEii_QJNtpd_ZleR5bMemv38W7gQXKZv2U4VoDeh1sZoMt4Mrpeb4qFWYUXxhbGURP0_x3iQP_3uwkBG6Da02PhNYSE2qvqwFntV04MB8Mrj0Syn5ADYEDy31gw9NfXiRDpXh-xCAJfZMbzeRW37OHodnZiK7tWMJB",
             liveUrl: "https://ethio-student-assistant.vercel.app/",
             githubUrl: "https://github.com/timir-tech/ethio-student-assistant"
         },
         {
             id: 3,
-            title: "professor agree",
+            title: "Professor Agree",
             category: "SaaS",
-            description: "professor agree platform. for ethiopian farmer and agriculture professional,assit as 30+ ear agri professor",
+            description: "Professor Agree platform for Ethiopian farmers and agriculture professionals; assists as a 30+ year agri professor.",
             image: agree,
             liveUrl: "https://professoragree.com/",
             githubUrl: "https://github.com/timir-tech/professoragree"
         },
         {
             id: 4,
-            title: "ehtiopan E-commerce",
-            category: "ecommerce",
-            description: "ethiopian ecommerce platfoem  samless trsansaction bitwen all ethiopians end to end",
+            title: "Ethiopian E-commerce",
+            category: "E-Commerce",
+            description: "Ethiopian e-commerce platform for seamless transactions between all Ethiopians, end to end.",
             image: logo,
             liveUrl: "",
             githubUrl: ""

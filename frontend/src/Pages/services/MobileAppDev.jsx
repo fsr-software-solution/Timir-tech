@@ -18,7 +18,7 @@ const MobileAppDev = () => {
                 <span className="text-xs font-label uppercase tracking-[0.2em] text-on-surface-variant">Mobile Engineering</span>
               </div>
               <h3 className="headline text-xl sm:text-2xl md:text-3xl font-bold mb-6 leading-tight px-2">
-                Mobile App <span className="text-gradient">Architect</span>
+                Mobile App <span className="text-gradient">Architecture</span>
               </h3>
               <p className="text-lg text-on-surface-variant leading-relaxed mb-8">
                 Master the art of building world-class mobile applications. From cross-platform performance to native precision, become an expert in the technologies that power the mobile web.

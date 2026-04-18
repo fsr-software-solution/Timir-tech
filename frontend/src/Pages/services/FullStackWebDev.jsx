@@ -18,16 +18,16 @@ const FullStackWebDev = () => {
                 <span className="text-xs font-label uppercase tracking-[0.2em] text-on-surface-variant">Engineering Career Path</span>
               </div>
               <h3 className="headline text-xl sm:text-2xl md:text-3xl font-bold mb-6 leading-tight px-2">
-                Full-Stack <span className="text-gradient">Web development</span>
+                Full-Stack <span className="text-gradient">Web Development</span>
               </h3>
               <p className="text-lg text-on-surface-variant leading-relaxed mb-8">
-                Build modern, high-performance web applications. From scrach frontends to robust backend architectures, master the skills required by top-tier tech firms.and market demand.
+                Build modern, high-performance web applications. From scratch frontends to robust backend architectures, master the skills required by top-tier tech firms and market demand.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href="http://marelign-yimer.vercel.app" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-gradient-to-br from-primary-container to-primary text-on-primary font-bold rounded-full shadow-2xl shadow-primary/20 hover:scale-105 transition-transform inline-block">
                   Enroll Now
                 </a>
-               
+
               </div>
             </div>
             <div className="relative group flex justify-center lg:justify-end items-center">
@@ -50,7 +50,7 @@ const FullStackWebDev = () => {
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="text-center mb-16">
             <h2 className="headline text-3xl md:text-4xl font-bold mb-4">Master the Modern Stack</h2>
-            <p className="text-on-surface-variant">We teach you the tools used by most companys  from html,css,javascript and bootstrap to node.js, react, express</p>
+            <p className="text-on-surface-variant">We teach you the tools used by most companies, from HTML, CSS, JavaScript, and Bootstrap to Node.js, React, and Express.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="glass-card p-8 rounded-3xl">
@@ -68,7 +68,7 @@ const FullStackWebDev = () => {
                 <span className="material-symbols-outlined text-2xl">database</span> Backend Excellence
               </h3>
               <div className="flex flex-wrap gap-3">
-                {['Node.js', 'Express', 'MongoDB', 'MySQL', 'REST API', 'Docker', 'golang'].map((t, i) => (
+                {['Node.js', 'Express', 'MongoDB', 'MySQL', 'REST API', 'Docker', 'Go'].map((t, i) => (
                   <span key={i} className="px-4 py-2 rounded-full bg-surface-container-highest/50 border border-outline-variant/20 text-sm font-bold">{t}</span>
                 ))}
               </div>

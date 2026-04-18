@@ -63,13 +63,13 @@ const Contact = () => {
                                 <span className="text-gradient">Digital Legacy</span>
                             </h3>
                             <p className="text-on-surface-variant text-lg leading-relaxed max-w-lg">
-                                Do you want any of our service? We are interesting to deliver the service. You can contact us by using provided form our support team will respond soon.
+                                Do you want any of our services? We are interested in delivering our services. You can contact us using the provided form; our support team will respond soon.
                             </p>
                             <p className="text-on-surface-variant text-lg leading-relaxed max-w-lg">
-                                If you want any of listed service or any other tech related service, Timir tech is your first choice.
+                                If you want any of our listed services or any other tech-related service, Timir Tech is your first choice.
                             </p>
                             <p className="text-on-surface-variant text-lg leading-relaxed max-w-lg">
-                                We are here to help you to grow your business with our technology solutions.
+                                We are here to help you grow your business with our technology solutions.
                             </p>
                             <p className="mt-4">
                                 ቢዝንስወን ለማዘመን፤ በአለም መድረክ፤
@@ -140,18 +140,18 @@ const Contact = () => {
                                         onChange={handleChange}
                                         className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 px-6 focus:outline-none focus:border-primary/50 transition-all text-on-surface appearance-none cursor-pointer"
                                     >
-                                        <option value="full stack Web development" className="bg-slate-900">full stack Web development</option>
-                                        <option value="Mobile app development" className="bg-slate-900">Mobile app development</option>
-                                        <option value="graphics Design" className="bg-slate-900">graphics Design</option>
-                                        <option value="video editig" className="bg-slate-900">video editig</option>
-                                        <option value="cyber security related" className="bg-slate-900">cyber security related</option>
+                                        <option value="full stack Web development" className="bg-slate-900">Full Stack Web Development</option>
+                                        <option value="Mobile app development" className="bg-slate-900">Mobile App Development</option>
+                                        <option value="graphics Design" className="bg-slate-900">Graphics Design</option>
+                                        <option value="video editig" className="bg-slate-900">Video Editing</option>
+                                        <option value="cyber security related" className="bg-slate-900">Cyber Security Related</option>
                                         <option value="Learning Bootcamp" className="bg-slate-900">Learning Bootcamp</option>
-                                        <option value="other issue" className="bg-slate-900">other issue</option>
+                                        <option value="other issue" className="bg-slate-900">Other Issue</option>
                                     </select>
                                 </div>
 
                                 <div className="space-y-2">
-                                    <label className="text-xs font-bold uppercase tracking-widest opacity-60 ml-1">what do you want? Your Message</label>
+                                    <label className="text-xs font-bold uppercase tracking-widest opacity-60 ml-1">Your Message</label>
                                     <textarea
                                         name="message"
                                         value={formData.message}
