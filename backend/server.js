@@ -4,6 +4,7 @@ import cors from 'cors'
 import connectDB from './config/database.js'
 import messageRoutes from './routes/messageRoutes.js'
 import adminRoutes from './routes/adminRoutes.js'
+import subscriberRoutes from './routes/subscriberRoutes.js'
 
 dotenv.config()
 
@@ -21,6 +22,7 @@ app.use(express.urlencoded({
 
 app.use('/api/messages', messageRoutes)
 app.use('/api/admin', adminRoutes)
+app.use('/api/subscribers', subscriberRoutes)
 
 app.get('/', (req, res) => {
     res.send("server runing ...")

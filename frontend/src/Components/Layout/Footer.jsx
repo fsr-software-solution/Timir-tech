@@ -3,6 +3,41 @@ import { Link } from 'react-router-dom';
 import logoImg from '../../assets/logobg.png';
 
 const Footer = () => {
+    const [email, setEmail] = React.useState('');
+    const [status, setStatus] = React.useState({ type: '', message: '' });
+    const [loading, setLoading] = React.useState(false);
+
+    const handleSubscribe = async (e) => {
+        e.preventDefault();
+        if (!email) return;
+
+        setLoading(true);
+        setStatus({ type: '', message: '' });
+
+        try {
+            const response = await fetch('https://timir-tech-back.vercel.app/api/subscribers', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email })
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                setStatus({ type: 'success', message: 'Thanks for subscribing!' });
+                setEmail('');
+            } else {
+                setStatus({ type: 'error', message: data.message || 'Something went wrong.' });
+            }
+        } catch (error) {
+            setStatus({ type: 'error', message: 'Connection error. Try again later.' });
+        } finally {
+            setLoading(false);
+        }
+    };
+
     return (
         <footer className="w-full border-t border-white/5 bg-slate-950">
             <div className="max-w-7xl mx-auto px-5 sm:px-8 py-16 sm:py-20 grid grid-cols-1 md:grid-cols-3 gap-12 font-['Manrope'] text-sm">
@@ -63,10 +98,30 @@ const Footer = () => {
                     </div>
                     <div className="pt-6">
                         <div className="text-slate-500 mb-2">Subscribe to our newsletter</div>
-                        <div className="flex">
-                            <input className="bg-surface-container-highest border-none rounded-l-xl px-4 py-3 focus:ring-1 focus:ring-primary w-full text-white" placeholder="Email address" type="email" />
-                            <button className="bg-primary text-on-primary px-4 py-3 rounded-r-xl font-bold">Join</button>
-                        </div>
+                        <form onSubmit={handleSubscribe} className="space-y-3">
+                            <div className="flex">
+                                <input
+                                    className="bg-surface-container-highest border-none rounded-l-xl px-4 py-3 focus:ring-1 focus:ring-primary w-full text-white"
+                                    placeholder="Email address"
+                                    type="email"
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    required
+                                />
+                                <button
+                                    type="submit"
+                                    disabled={loading}
+                                    className="bg-primary text-on-primary px-4 py-3 rounded-r-xl font-bold disabled:opacity-50"
+                                >
+                                    {loading ? '...' : 'Join'}
+                                </button>
+                            </div>
+                            {status.message && (
+                                <p className={`text-xs ${status.type === 'success' ? 'text-green-500' : 'text-red-500'}`}>
+                                    {status.message}
+                                </p>
+                            )}
+                        </form>
                     </div>
                 </div>
             </div>
