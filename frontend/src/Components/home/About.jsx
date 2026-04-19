@@ -18,7 +18,7 @@ const About = () => {
                             </div>
                             <h3 className="headline text-2xl md:text-3xl font-bold">
                                 Timir <span className="text-white">Tech</span>
-                                <div className="text-sm font-medium text-slate-500 tracking-normal lowercae mt-1">Digital Solution for better future</div>
+                                <div className="text-sm font-medium text-slate-500 tracking-normal mt-1">Digital Solutions For Better Future</div>
                             </h3>
                         </div>
                         <h4 className="text-xl md:text-2xl font-bold mb-8">Redefining Tech <br /><span className="text-on-surface-variant/50">Boundaries</span></h4>

@@ -5,6 +5,8 @@ const AdminDashboard = () => {
     const [messages, setMessages] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
+    const [currentPage, setCurrentPage] = useState(1);
+    const messagesPerPage = 10;
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -70,6 +72,11 @@ const AdminDashboard = () => {
         navigate('/admin/login');
     };
 
+    const indexOfLastMessage = currentPage * messagesPerPage;
+    const indexOfFirstMessage = indexOfLastMessage - messagesPerPage;
+    const currentMessages = messages.slice(indexOfFirstMessage, indexOfLastMessage);
+    const totalPages = Math.ceil(messages.length / messagesPerPage);
+
     if (loading) return (
         <div className="min-h-screen bg-slate-950 flex items-center justify-center">
             <div className="text-primary animate-pulse text-xl">Loading messages...</div>
@@ -77,7 +84,7 @@ const AdminDashboard = () => {
     );
 
     return (
-        <div className="min-h-screen bg-slate-950 text-on-surface p-6 md:p-12">
+        <div className="min-h-screen bg-slate-950 text-on-surface p-6 md:p-12 pt-28 md:pt-36">
             <div className="max-w-7xl mx-auto space-y-8">
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
                     <div>
@@ -109,7 +116,7 @@ const AdminDashboard = () => {
                     </div>
                 ) : (
                     <div className="grid grid-cols-1 gap-6">
-                        {messages.map((msg) => (
+                        {currentMessages.map((msg) => (
                             <div key={msg._id} className="glass-card p-8 rounded-[2.5rem] border-primary/5 hover:border-primary/20 transition-all group relative overflow-hidden">
                                 <div className="flex flex-col md:flex-row justify-between gap-6">
                                     <div className="space-y-4 flex-1">
@@ -144,6 +151,28 @@ const AdminDashboard = () => {
                                 </div>
                             </div>
                         ))}
+
+                        {totalPages > 1 && (
+                            <div className="flex justify-center items-center gap-4 mt-8">
+                                <button
+                                    onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
+                                    disabled={currentPage === 1}
+                                    className="px-4 py-2 rounded-xl border border-white/10 hover:bg-white/5 disabled:opacity-50 transition-all font-medium text-sm"
+                                >
+                                    Previous
+                                </button>
+                                <span className="text-sm opacity-60">
+                                    Page {currentPage} of {totalPages}
+                                </span>
+                                <button
+                                    onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
+                                    disabled={currentPage === totalPages}
+                                    className="px-4 py-2 rounded-xl border border-white/10 hover:bg-white/5 disabled:opacity-50 transition-all font-medium text-sm"
+                                >
+                                    Next
+                                </button>
+                            </div>
+                        )}
                     </div>
                 )}
             </div>

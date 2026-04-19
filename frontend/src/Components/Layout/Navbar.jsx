@@ -32,8 +32,8 @@ const Navbar = () => {
               <span className="text-base sm:text-2xl font-bold text-amber-500 uppercase tracking-widest leading-none">
                 Timir <span className="text-white">Tech</span>
               </span>
-              <span className="text-[10px] sm:text-xs text-slate-400 font-medium tracking-normal mt-1 lowercase">
-                Digital Solution for better future
+              <span className="text-[10px] sm:text-xs text-slate-400 font-medium tracking-normal mt-1">
+                Digital Solutions For Better Future
               </span>
             </div>
           </Link>

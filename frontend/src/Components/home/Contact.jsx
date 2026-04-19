@@ -68,7 +68,7 @@ const Contact = () => {
                                         Timir <span className="text-white">Tech</span>
                                     </div>
                                     <div className="text-[10px] text-slate-500 font-medium mt-1">
-                                        Digital Solution for better future
+                                        Digital Solutions For Better Future
                                     </div>
                                 </div>
                             </div>
