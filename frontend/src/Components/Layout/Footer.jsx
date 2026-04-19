@@ -1,13 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logoImg from '../../assets/logobg.png';
 
 const Footer = () => {
     return (
         <footer className="w-full border-t border-white/5 bg-slate-950">
             <div className="max-w-7xl mx-auto px-5 sm:px-8 py-16 sm:py-20 grid grid-cols-1 md:grid-cols-3 gap-12 font-['Manrope'] text-sm">
                 <div className="space-y-6 px-2">
-                    <div className="text-3xl font-black text-amber-500">Timir Tech</div>
-                    <p className="text-slate-500 leading-relaxed max-w-xs">Pioneering technical solutions for the digital age. We build with precision and scale with vision.</p>
+                    <div className="flex items-center gap-3">
+                        <div className="w-12 h-12 rounded-full overflow-hidden flex items-center justify-center bg-[#07324f]">
+                            <img
+                                src={logoImg}
+                                alt="Timir Tech Logo"
+                                className="w-full h-full object-cover scale-[1.10]"
+                            />
+                        </div>
+                        <div className="flex flex-col">
+                            <div className="text-2xl font-black text-amber-500 leading-none">
+                                Timir <span className="text-white">Tech</span>
+                            </div>
+                            <div className="text-[10px] text-slate-500 font-medium mt-1">
+                                Digital Solution for better future
+                            </div>
+                        </div>
+                    </div>
+                    <p className="text-slate-500 leading-relaxed max-w-xs pl-1">Pioneering technical solutions for the digital age. We build with precision and scale with vision.</p>
                 </div>
                 <div className="grid grid-cols-2 gap-8">
                     <div className="space-y-4">

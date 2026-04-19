@@ -1,4 +1,5 @@
 import React from 'react';
+import logoImg from '../../assets/logobg.png';
 
 const About = () => {
     return (
@@ -7,7 +8,20 @@ const About = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
                     <div className="relative">
                         <div className="absolute -top-10 -left-10 w-32 h-32 bg-primary/20 blur-3xl"></div>
-                        <h3 className="headline text-2xl md:text-3xl font-bold mb-8">Redefining Tech <br /><span className="text-on-surface-variant/50">Boundaries</span></h3>
+                        <div className="flex items-center gap-4 mb-8">
+                            <div className="w-16 h-16 rounded-full overflow-hidden flex items-center justify-center bg-[#07324f] shadow-2xl shadow-primary/20">
+                                <img
+                                    src={logoImg}
+                                    alt="Timir Tech Logo"
+                                    className="w-full h-full object-cover scale-[1.10]"
+                                />
+                            </div>
+                            <h3 className="headline text-2xl md:text-3xl font-bold">
+                                Timir <span className="text-white">Tech</span>
+                                <div className="text-sm font-medium text-slate-500 tracking-normal lowercae mt-1">Digital Solution for better future</div>
+                            </h3>
+                        </div>
+                        <h4 className="text-xl md:text-2xl font-bold mb-8">Redefining Tech <br /><span className="text-on-surface-variant/50">Boundaries</span></h4>
                         <p className="text-lg text-on-surface-variant mb-12 leading-loose">
                             Timir Tech isn't just a software house. We are a collective of visionaries, developers, security specialists and designers dedicated to crafting the next generation of digital infrastructure.
                         </p>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logoImg from '../../assets/logobg.png';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -54,6 +55,23 @@ const Contact = () => {
                     {/* Left Column: Info */}
                     <div className="space-y-8 lg:sticky lg:top-32">
                         <div>
+                            <div className="flex items-center gap-4 mb-8">
+                                <div className="w-16 h-16 rounded-full overflow-hidden flex items-center justify-center bg-[#07324f] shadow-xl shadow-primary/10">
+                                    <img
+                                        src={logoImg}
+                                        alt="Timir Tech Logo"
+                                        className="w-full h-full object-cover scale-[1.10]"
+                                    />
+                                </div>
+                                <div className="flex flex-col">
+                                    <div className="text-2xl font-black text-amber-500 leading-none">
+                                        Timir <span className="text-white">Tech</span>
+                                    </div>
+                                    <div className="text-[10px] text-slate-500 font-medium mt-1">
+                                        Digital Solution for better future
+                                    </div>
+                                </div>
+                            </div>
                             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 mb-6">
                                 <span className="material-symbols-outlined text-primary text-sm">alternate_email</span>
                                 <span className="text-xs font-label uppercase tracking-[0.2em] text-primary">Get in Touch</span>

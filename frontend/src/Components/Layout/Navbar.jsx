@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import logoImg from '../../assets/logobg.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,9 +18,25 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 border-b border-white/10 bg-slate-900/80 backdrop-blur-xl shadow-2xl shadow-amber-500/10 z-50 font-['Space_Grotesk'] tracking-tight">
-        <div className="max-w-7xl mx-auto flex justify-between items-center px-3 sm:px-6 md:px-8 py-3 sm:py-4">
-          <Link to="/" className="text-base sm:text-2xl font-bold text-amber-500 uppercase tracking-widest whitespace-nowrap overflow-hidden text-ellipsis max-w-[140px] sm:max-w-none">Timir Tech</Link>
+      <nav className="fixed top-0 left-0 right-0 border-b border-white/10 bg-[#07324f] z-50 font-['Space_Grotesk'] tracking-tight">
+        <div className="max-w-7xl mx-auto flex justify-between items-center px-3 sm:px-6 md:px-8 py-1 sm:py-2">
+          <Link to="/" className="flex items-center gap-1.5 group">
+            <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-full overflow-hidden flex items-center justify-center bg-[#07324f] border-none outline-none ring-0">
+              <img
+                src={logoImg}
+                alt="Timir Tech Logo"
+                className="w-full h-full object-cover scale-[1.10] transform-gpu"
+              />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-base sm:text-2xl font-bold text-amber-500 uppercase tracking-widest leading-none">
+                Timir <span className="text-white">Tech</span>
+              </span>
+              <span className="text-[10px] sm:text-xs text-slate-400 font-medium tracking-normal mt-1 lowercase">
+                Digital Solution for better future
+              </span>
+            </div>
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-8 items-center">
@@ -59,7 +76,7 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center gap-2 sm:gap-4">
-          
+
 
             {/* Mobile Toggle */}
             <button
