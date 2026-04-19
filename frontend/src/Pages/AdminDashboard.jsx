@@ -6,7 +6,7 @@ const AdminDashboard = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
     const [currentPage, setCurrentPage] = useState(1);
-    const messagesPerPage = 10;
+    const [messagesPerPage, setMessagesPerPage] = useState(10);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -152,27 +152,46 @@ const AdminDashboard = () => {
                             </div>
                         ))}
 
-                        {totalPages > 1 && (
-                            <div className="flex justify-center items-center gap-4 mt-8">
-                                <button
-                                    onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
-                                    disabled={currentPage === 1}
-                                    className="px-4 py-2 rounded-xl border border-white/10 hover:bg-white/5 disabled:opacity-50 transition-all font-medium text-sm"
+                        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mt-8 border-t border-white/5 pt-6">
+                            <div className="flex items-center gap-2">
+                                <span className="text-sm opacity-60">Messages per page:</span>
+                                <select
+                                    value={messagesPerPage}
+                                    onChange={(e) => {
+                                        setMessagesPerPage(Number(e.target.value));
+                                        setCurrentPage(1);
+                                    }}
+                                    className="bg-slate-900 border border-white/10 rounded-lg px-2 py-1 text-sm focus:outline-none focus:border-primary/50 text-white cursor-pointer"
                                 >
-                                    Previous
-                                </button>
-                                <span className="text-sm opacity-60">
-                                    Page {currentPage} of {totalPages}
-                                </span>
-                                <button
-                                    onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
-                                    disabled={currentPage === totalPages}
-                                    className="px-4 py-2 rounded-xl border border-white/10 hover:bg-white/5 disabled:opacity-50 transition-all font-medium text-sm"
-                                >
-                                    Next
-                                </button>
+                                    <option value={5}>5</option>
+                                    <option value={10}>10</option>
+                                    <option value={25}>25</option>
+                                    <option value={50}>50</option>
+                                </select>
                             </div>
-                        )}
+
+                            {totalPages > 1 && (
+                                <div className="flex items-center gap-4">
+                                    <button
+                                        onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
+                                        disabled={currentPage === 1}
+                                        className="px-4 py-2 rounded-xl border border-white/10 hover:bg-white/5 disabled:opacity-50 transition-all font-medium text-sm"
+                                    >
+                                        Previous
+                                    </button>
+                                    <span className="text-sm opacity-60">
+                                        Page {currentPage} of {totalPages}
+                                    </span>
+                                    <button
+                                        onClick={() => setCurrentPage(prev => Math.min(prev + 1, totalPages))}
+                                        disabled={currentPage === totalPages}
+                                        className="px-4 py-2 rounded-xl border border-white/10 hover:bg-white/5 disabled:opacity-50 transition-all font-medium text-sm"
+                                    >
+                                        Next
+                                    </button>
+                                </div>
+                            )}
+                        </div>
                     </div>
                 )}
             </div>

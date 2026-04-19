@@ -1,10 +1,58 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import logoImg from '../../assets/logobg.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showServices, setShowServices] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');
+  const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (location.pathname !== '/') {
+        setActiveSection('');
+        return;
+      }
+
+      const sections = ['home', 'portfolio', 'about', 'contact'];
+      let current = 'home';
+
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= 150 && rect.bottom >= 150) {
+            current = section;
+          }
+        }
+      }
+
+      if (window.scrollY < 100) current = 'home';
+      setActiveSection(current);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [location.pathname]);
+
+  const getLinkStyle = (section, isMobile = false) => {
+    const isActive = location.pathname === '/' && activeSection === section;
+    const baseStyle = "transition-colors font-bold";
+    if (isMobile) {
+      return `${baseStyle} text-2xl ${isActive ? 'text-amber-400' : 'text-slate-300'}`;
+    }
+    return `${baseStyle} ${isActive ? 'text-amber-400' : 'text-slate-300 hover:text-white'}`;
+  };
+
+  const getServicesStyle = (isMobile = false) => {
+    const isActive = location.pathname.includes('/services');
+    if (isMobile) {
+      return `text-2xl flex items-center gap-2 w-full transition-colors font-bold ${isActive ? 'text-amber-400' : 'text-slate-300'}`;
+    }
+    return `transition-colors cursor-pointer flex items-center gap-1 font-bold ${isActive ? 'text-amber-400' : 'text-slate-300 hover:text-white'}`;
+  };
 
   const serviceItems = [
     { name: 'Software Development', path: '/services/software-development' },
@@ -40,7 +88,7 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-8 items-center">
-            <Link className="text-amber-400 font-bold border-b-2 border-amber-500 pb-1" to="/">Home</Link>
+            <Link className={getLinkStyle('home')} to="/">Home</Link>
 
             {/* Services Dropdown */}
             <div
@@ -48,7 +96,7 @@ const Navbar = () => {
               onMouseEnter={() => setShowServices(true)}
               onMouseLeave={() => setShowServices(false)}
             >
-              <span className="text-slate-300 hover:text-white transition-colors cursor-pointer flex items-center gap-1">
+              <span className={getServicesStyle()}>
                 Services
                 <span className={`material-symbols-outlined text-sm transition-transform duration-300 ${showServices ? 'rotate-180' : ''}`}>expand_more</span>
               </span>
@@ -70,9 +118,9 @@ const Navbar = () => {
               )}
             </div>
 
-            <a className="text-slate-300 hover:text-white transition-colors" href="/#portfolio">Portfolio</a>
-            <a className="text-slate-300 hover:text-white transition-colors" href="/#about">About</a>
-            <a className="text-slate-300 hover:text-white transition-colors" href="/#contact">Contact</a>
+            <a className={getLinkStyle('portfolio')} href="/#portfolio">Portfolio</a>
+            <a className={getLinkStyle('about')} href="/#about">About</a>
+            <a className={getLinkStyle('contact')} href="/#contact">Contact</a>
           </div>
 
           <div className="flex items-center gap-2 sm:gap-4">
@@ -93,13 +141,13 @@ const Navbar = () => {
       {/* Mobile Menu Overlay */}
       {isOpen && (
         <div className="fixed inset-0 z-40 bg-slate-900/95 backdrop-blur-3xl pt-24 px-8 flex flex-col gap-6 md:hidden overflow-y-auto">
-          <Link onClick={() => setIsOpen(false)} className="text-2xl text-amber-400 font-bold" to="/">Home</Link>
+          <Link onClick={() => setIsOpen(false)} className={getLinkStyle('home', true)} to="/">Home</Link>
 
           {/* Mobile Services Accordion */}
           <div>
             <button
               onClick={() => setShowServices(!showServices)}
-              className="text-2xl text-slate-300 flex items-center gap-2 w-full"
+              className={getServicesStyle(true)}
             >
               Services
               <span className={`material-symbols-outlined transition-transform duration-300 ${showServices ? 'rotate-180' : ''}`}>expand_more</span>
@@ -120,9 +168,9 @@ const Navbar = () => {
             )}
           </div>
 
-          <a onClick={() => setIsOpen(false)} className="text-2xl text-slate-300" href="/#portfolio">Portfolio</a>
-          <a onClick={() => setIsOpen(false)} className="text-2xl text-slate-300" href="/#about">About</a>
-          <a onClick={() => setIsOpen(false)} className="text-2xl text-slate-300" href="/#contact">Contact</a>
+          <a onClick={() => setIsOpen(false)} className={getLinkStyle('portfolio', true)} href="/#portfolio">Portfolio</a>
+          <a onClick={() => setIsOpen(false)} className={getLinkStyle('about', true)} href="/#about">About</a>
+          <a onClick={() => setIsOpen(false)} className={getLinkStyle('contact', true)} href="/#contact">Contact</a>
           <button className="mt-8 bg-primary-container text-on-primary-container px-8 py-4 w-full rounded-full font-bold shadow-lg shadow-primary/20">
             Get Started
           </button>
