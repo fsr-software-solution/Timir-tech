@@ -87,7 +87,7 @@ const Footer = () => {
                             <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z" /></svg>
                             <span>TikTok</span>
                         </a>
-                        <a className="flex items-center gap-3 text-slate-500 hover:text-amber-500 transition-colors" href="https://t.me/Timir_Tech" target="_blank" rel="noopener noreferrer">
+                        <a className="flex items-center gap-3 text-slate-500 hover:text-amber-500 transition-colors" href="https://t.me/+sGyZvr47E71mMGQ8" target="_blank" rel="noopener noreferrer">
                             <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.16L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.7l-4.14-3.04-2 1.93c-.22.22-.41.4-.84.4z" /></svg>
                             <span>Telegram</span>
                         </a>
