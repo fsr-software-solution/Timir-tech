@@ -97,9 +97,8 @@ const Contact = () => {
 
                         <div className="space-y-6">
                             {[
-                                { icon: 'mail', label: 'Email Us', value: 'hello@timirtech.com', link: 'mailto:hello@timirtech.com' },
-                                { icon: 'location_on', label: 'Visit Us', value: 'Technical Plaza, Suite 402', link: '#' },
-                                { icon: 'call', label: 'Call Us', value: '+1 (555) 000-TECH', link: 'tel:+1555000TECH' }
+                                { icon: 'mail', label: 'Email Us', value: 'branatechsolution@gmail.com', link: 'mailto:branatechsolution@gmail.com' },
+                                { icon: 'call', label: 'Call Us', value: '+251 945 342 453', link: 'tel:+251945342453' }
                             ].map((info, idx) => (
                                 <a key={idx} href={info.link} className="flex items-center gap-4 group">
                                     <div className="w-12 h-12 rounded-2xl bg-surface-container-highest border border-outline-variant/30 flex items-center justify-center group-hover:border-primary/50 group-hover:bg-primary/5 transition-all">
