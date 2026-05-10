@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import mobileShowcase from '../../assets/mobile-bootcamp.png';
 
 const MobileAppDev = () => {
   return (
@@ -31,19 +32,36 @@ const MobileAppDev = () => {
               </div>
             </div>
             <div className="relative flex justify-center">
-              <div className="rounded-[2rem] overflow-hidden relative group border border-primary/20 bg-surface-container-low shadow-2xl">
+              <div className="rounded-[3rem] overflow-hidden relative group border border-primary/30 bg-surface-container-low shadow-[0_32px_64px_-16px_rgba(0,0,0,0.5)] transform hover:-rotate-2 transition-all duration-500">
                 <img
-                  src="https://th.bing.com/th?id=OIF.7JGZAGKnEhC81%2fyNpcLz5w&w=281&h=194&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
-                  alt="Mobile App Development Preview"
-                  className="w-full h-auto block group-hover:scale-105 transition-transform duration-700"
+                  src={mobileShowcase}
+                  alt="Modern Mobile App Showcase"
+                  className="w-full h-auto block group-hover:scale-110 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+                <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
               </div>
               {/* Floating Labels */}
-              <div className="absolute top-1/4 -right-4 glass-card p-4 rounded-2xl animate-bounce-slow">
-                <div className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-success"></span>
-                  <span className="text-xs font-bold">Native Performance</span>
+              <div className="absolute -top-6 -right-6 glass-card p-4 rounded-2xl animate-bounce-slow border-primary/20 shadow-xl">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center">
+                    <span className="material-symbols-outlined text-primary text-sm">rocket_launch</span>
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-[10px] uppercase font-black tracking-widest text-primary">Live Now</span>
+                    <span className="text-xs font-bold whitespace-nowrap">Mobile Excellence</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="absolute -bottom-8 -left-8 glass-card p-4 rounded-2xl animate-pulse border-amber-500/20 shadow-xl hidden md:block">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
+                    <span className="material-symbols-outlined text-amber-500 text-sm">palette</span>
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-[10px] uppercase font-black tracking-widest text-amber-500">Premium</span>
+                    <span className="text-xs font-bold whitespace-nowrap">UI/UX Mastery</span>
+                  </div>
                 </div>
               </div>
             </div>
