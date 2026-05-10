@@ -24,7 +24,7 @@ const VideoEditing = () => {
                 Master the art of cinematic storytelling. From advanced video editing to motion graphics and color grading, learn the skills to produce high-impact digital content.
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href="http://marelign-yimer.vercel.app" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-gradient-to-br from-primary-container to-primary text-on-primary font-bold rounded-full shadow-2xl shadow-primary/20 hover:scale-105 transition-transform inline-block">
+                <a href="https://timiracademy.vercel.app/" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-gradient-to-br from-primary-container to-primary text-on-primary font-bold rounded-full shadow-2xl shadow-primary/20 hover:scale-105 transition-transform inline-block">
                   Start Learning
                 </a>
               

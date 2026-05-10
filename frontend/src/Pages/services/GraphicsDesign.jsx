@@ -24,7 +24,7 @@ const GraphicsDesign = () => {
                 Master the principles of design thinking and user experience. From wireframing to high-fidelity prototypes, build products that are as beautiful as they are functional.
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href="http://marelign-yimer.vercel.app" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-gradient-to-br from-primary-container to-primary text-on-primary font-bold rounded-full shadow-2xl shadow-primary/20 hover:scale-105 transition-transform inline-block">
+                <a href="https://timiracademy.vercel.app/" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-gradient-to-br from-primary-container to-primary text-on-primary font-bold rounded-full shadow-2xl shadow-primary/20 hover:scale-105 transition-transform inline-block">
                   Apply Now
                 </a>
                

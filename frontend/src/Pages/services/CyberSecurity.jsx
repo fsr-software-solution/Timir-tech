@@ -27,7 +27,7 @@ const CyberSecurity = () => {
                                 Learn to think like a hacker to protect organizations. From network security to advanced penetration testing, master the tools and techniques used by industry experts.
                             </p>
                             <div className="flex flex-wrap gap-4">
-                                <a href="http://marelign-yimer.vercel.app" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-gradient-to-br from-error to-error-container text-on-error font-bold rounded-full shadow-2xl shadow-error/20 hover:scale-105 transition-transform inline-block">
+                                <a href="https://timiracademy.vercel.app/" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-gradient-to-br from-error to-error-container text-on-error font-bold rounded-full shadow-2xl shadow-error/20 hover:scale-105 transition-transform inline-block">
                                     Join the Mission
                                 </a>
                               

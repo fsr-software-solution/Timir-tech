@@ -41,7 +41,7 @@ const LearningBootcamp = () => {
                 Intensive, hands-on training programs from computer basics up to advanced development, designed to transform absolute beginners into industry-ready professionals. Learn from active and experienced teachers building real-world products, choosing the format that perfectly fits your schedule.
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href="http://marelign-yimer.vercel.app" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-gradient-to-br from-primary-container to-primary text-on-primary font-bold rounded-full shadow-2xl shadow-primary/20 hover:scale-105 transition-transform inline-block">
+                <a href="https://timiracademy.vercel.app/" target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-gradient-to-br from-primary-container to-primary text-on-primary font-bold rounded-full shadow-2xl shadow-primary/20 hover:scale-105 transition-transform inline-block">
                   Enroll Now
                 </a>
 
