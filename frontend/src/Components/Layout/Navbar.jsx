@@ -1,12 +1,37 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logoImg from '../../assets/logobg.png';
 
+const NAVBAR_OFFSET_FALLBACK = '6.5rem';
+
 const Navbar = () => {
+  const navRef = useRef(null);
+  const [spacerHeight, setSpacerHeight] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
   const [showServices, setShowServices] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
   const location = useLocation();
+
+  useLayoutEffect(() => {
+    const nav = navRef.current;
+    if (!nav) return;
+
+    const sync = () => {
+      const h = Math.ceil(nav.getBoundingClientRect().height);
+      setSpacerHeight(h);
+      document.documentElement.style.setProperty('--navbar-offset', `${h}px`);
+    };
+
+    sync();
+    const ro = new ResizeObserver(sync);
+    ro.observe(nav);
+    window.addEventListener('resize', sync);
+    return () => {
+      ro.disconnect();
+      window.removeEventListener('resize', sync);
+      document.documentElement.style.removeProperty('--navbar-offset');
+    };
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -66,7 +91,10 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 border-b border-white/10 bg-[#07324f] z-50 font-['Space_Grotesk'] tracking-tight pt-[env(safe-area-inset-top,0px)]">
+      <nav
+        ref={navRef}
+        className="fixed top-0 left-0 right-0 border-b border-white/10 bg-[#07324f] z-50 font-['Space_Grotesk'] tracking-tight pt-[env(safe-area-inset-top,0px)]"
+      >
         <div className="max-w-7xl mx-auto flex min-h-[4.5rem] sm:min-h-[6rem] justify-between items-center px-3 sm:px-6 md:px-8 py-2 sm:py-2">
           <Link to="/" className="flex items-center gap-1.5 group">
             <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-full overflow-hidden flex items-center justify-center bg-[#07324f] border-none outline-none ring-0">
@@ -138,9 +166,15 @@ const Navbar = () => {
         </div>
       </nav>
 
+      <div
+        className="w-full shrink-0"
+        style={{ height: spacerHeight ?? NAVBAR_OFFSET_FALLBACK }}
+        aria-hidden
+      />
+
       {/* Mobile Menu Overlay */}
       {isOpen && (
-        <div className="fixed inset-0 z-40 bg-slate-900/95 backdrop-blur-3xl pt-[calc(5rem+env(safe-area-inset-top,0px))] px-8 flex flex-col gap-6 md:hidden overflow-y-auto">
+        <div className="fixed inset-0 z-40 bg-slate-900/95 backdrop-blur-3xl pt-[var(--navbar-offset,6.5rem)] px-8 flex flex-col gap-6 md:hidden overflow-y-auto">
           <Link onClick={() => setIsOpen(false)} className={getLinkStyle('home', true)} to="/">Home</Link>
 
           {/* Mobile Services Accordion */}

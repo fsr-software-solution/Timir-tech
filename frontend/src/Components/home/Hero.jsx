@@ -21,7 +21,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <section className="relative flex min-h-[100dvh] flex-col overflow-x-hidden pb-14 sm:pb-16">
+        <section className="relative flex min-h-[calc(100dvh-var(--navbar-offset,6.5rem))] flex-col overflow-x-hidden pb-14 sm:pb-16">
             <div className="pointer-events-none absolute inset-0 z-0" aria-hidden>
                 <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-container/10 blur-[120px] rounded-full"></div>
                 <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-surface-container-highest/30 blur-[120px] rounded-full"></div>
@@ -35,8 +35,8 @@ const Hero = () => {
                     />
                 ))}
             </div>
-            <div className="relative z-10 flex w-full flex-1 flex-col justify-start pt-[calc(7.75rem+env(safe-area-inset-top,0px))] sm:pt-[calc(8.25rem+env(safe-area-inset-top,0px))] md:pt-[calc(8.75rem+env(safe-area-inset-top,0px))]">
-                <div className="w-full max-w-7xl mx-auto px-5 sm:px-8 py-6 text-center shrink-0 lg:mt-[min(8vh,3.5rem)]">
+            <div className="relative z-10 flex w-full min-h-0 flex-1 flex-col items-center justify-start pt-10 pb-8 sm:pt-14 sm:pb-12 md:pt-[min(5rem,12vh)]">
+                <div className="w-full max-w-7xl mx-auto px-5 sm:px-8 text-center shrink-0">
                     <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-surface-container-highest/50 border border-outline-variant/30 mb-6 sm:mb-8">
                         <span className="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span>
                         <span className="text-[10px] sm:text-xs font-label uppercase tracking-[0.2em] text-on-surface-variant">Digital Solutions for Better Future</span>
