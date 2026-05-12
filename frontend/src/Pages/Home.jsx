@@ -9,7 +9,7 @@ import Contact from '../Components/home/Contact';
 
 const Home = () => {
     return (
-        <main id="home">
+        <main id="home" className="scroll-mt-[calc(7.75rem+env(safe-area-inset-top,0px))] sm:scroll-mt-[calc(8.25rem+env(safe-area-inset-top,0px))]">
             <Hero />
             <About />
             <Services />

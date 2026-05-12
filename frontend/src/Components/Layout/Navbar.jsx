@@ -66,8 +66,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 border-b border-white/10 bg-[#07324f] z-50 font-['Space_Grotesk'] tracking-tight">
-        <div className="max-w-7xl mx-auto flex justify-between items-center px-3 sm:px-6 md:px-8 py-1 sm:py-2">
+      <nav className="fixed top-0 left-0 right-0 border-b border-white/10 bg-[#07324f] z-50 font-['Space_Grotesk'] tracking-tight pt-[env(safe-area-inset-top,0px)]">
+        <div className="max-w-7xl mx-auto flex min-h-[4.5rem] sm:min-h-[6rem] justify-between items-center px-3 sm:px-6 md:px-8 py-2 sm:py-2">
           <Link to="/" className="flex items-center gap-1.5 group">
             <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-full overflow-hidden flex items-center justify-center bg-[#07324f] border-none outline-none ring-0">
               <img
@@ -140,7 +140,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Overlay */}
       {isOpen && (
-        <div className="fixed inset-0 z-40 bg-slate-900/95 backdrop-blur-3xl pt-24 px-8 flex flex-col gap-6 md:hidden overflow-y-auto">
+        <div className="fixed inset-0 z-40 bg-slate-900/95 backdrop-blur-3xl pt-[calc(5rem+env(safe-area-inset-top,0px))] px-8 flex flex-col gap-6 md:hidden overflow-y-auto">
           <Link onClick={() => setIsOpen(false)} className={getLinkStyle('home', true)} to="/">Home</Link>
 
           {/* Mobile Services Accordion */}
