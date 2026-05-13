@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import agree from "../../assets/ethioagree.webp"
 import logo from "../../assets/logo.png"
-
+import ecommerce from "../../assets/ecommerce.webp";
+import energy from "../../assets/energy.webp";
 const Portfolio = () => {
+    const PRIVATE_NOTICE_TEXT = 'This is private please contact privatly';
     const projects = [
         {
             id: 1,
@@ -45,7 +47,7 @@ const Portfolio = () => {
             title: "Neon Retail",
             category: "E-Commerce",
             description: "Next-gen shopping experience with AR product previews and seamless checkout.",
-            image: "https://via.placeholder.com/800x600/1a1a1a/ffde59?text=Neon+Retail",
+            image: ecommerce,
             liveUrl: "#",
             githubUrl: "#"
         },
@@ -54,15 +56,29 @@ const Portfolio = () => {
             title: "Volt Energy",
             category: "Industrial",
             description: "Smart grid monitoring and energy conservation dashboard for urban infrastructure.",
-            image: "https://via.placeholder.com/800x600/1a1a1a/00ff00?text=Volt+Energy",
+            image: energy,
             liveUrl: "#",
             githubUrl: "#"
         }
     ];
 
     const [visibleCount, setVisibleCount] = useState(4);
+    const [showPrivateNotice, setShowPrivateNotice] = useState(false);
     const showMore = () => {
         setVisibleCount(prev => prev + 2);
+    };
+
+    useEffect(() => {
+        if (!showPrivateNotice) return;
+        const t = setTimeout(() => setShowPrivateNotice(false), 2200);
+        return () => clearTimeout(t);
+    }, [showPrivateNotice]);
+
+    const handlePrivateLinkClick = (e) => {
+        // Prevent navigation for non-public portfolio artifacts.
+        e.preventDefault();
+        e.stopPropagation();
+        setShowPrivateNotice(true);
     };
 
     return (
@@ -92,14 +108,30 @@ const Portfolio = () => {
                                 <h3 className="headline text-3xl font-bold mb-4">{project.title}</h3>
                                 <p className="text-on-surface-variant mb-6">{project.description}</p>
                                 <div className="flex gap-4 items-center mt-2 relative z-20">
-                                    <a href={project.liveUrl} target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full border border-primary/30 flex justify-center items-center text-primary bg-surface-container hover:bg-primary hover:text-on-primary transition-all cursor-pointer" aria-label="Live Preview" title="Live Preview">
+                                    <a
+                                        href={project.liveUrl}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        onClick={index === 0 ? undefined : handlePrivateLinkClick}
+                                        className="w-12 h-12 rounded-full border border-primary/30 flex justify-center items-center text-primary bg-surface-container hover:bg-primary hover:text-on-primary transition-all cursor-pointer"
+                                        aria-label="Live Preview"
+                                        title="Live Preview"
+                                    >
                                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                                             <polyline points="15 3 21 3 21 9"></polyline>
                                             <line x1="10" y1="14" x2="21" y2="3"></line>
                                         </svg>
                                     </a>
-                                    <a href={project.githubUrl} target="_blank" rel="noreferrer" className="w-12 h-12 rounded-full border border-primary/30 flex justify-center items-center text-primary bg-surface-container hover:bg-primary hover:text-on-primary transition-all cursor-pointer" aria-label="View Source on GitHub" title="View Source on GitHub">
+                                    <a
+                                        href={project.githubUrl}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        onClick={index === 0 ? undefined : handlePrivateLinkClick}
+                                        className="w-12 h-12 rounded-full border border-primary/30 flex justify-center items-center text-primary bg-surface-container hover:bg-primary hover:text-on-primary transition-all cursor-pointer"
+                                        aria-label="View Source on GitHub"
+                                        title="View Source on GitHub"
+                                    >
                                         <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M12 2C6.47 2 2 6.47 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48 0-.24-.01-.88-.01-1.73-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1.01.07 1.54 1.04 1.54 1.04.9 1.54 2.36 1.09 2.93.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.8-.22 1.65-.33 2.5-.33.85 0 1.7.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.18.59.69.48C19.14 20.16 22 16.42 22 12c0-5.53-4.47-10-10-10z" />
                                         </svg>
@@ -109,6 +141,12 @@ const Portfolio = () => {
                         </div>
                     ))}
                 </div>
+
+                {showPrivateNotice && (
+                    <div className="fixed left-1/2 top-24 z-[60] -translate-x-1/2 rounded-2xl border border-white/10 bg-[#07324f] px-6 py-3 text-on-surface text-sm shadow-2xl shadow-black/40">
+                        {PRIVATE_NOTICE_TEXT}
+                    </div>
+                )}
 
                 {visibleCount < projects.length && (
                     <div className="flex justify-center mt-20">
