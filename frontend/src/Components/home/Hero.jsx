@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import image1 from '../../assets/secondbg.png'
-import image2 from '../../assets/thirdbg.png'
+import image1 from '../../assets/bg6.png'
+import image2 from '../../assets/bg7.png'
 import image3 from '../../assets/fourthbg.png'
 
 const Hero = () => {
