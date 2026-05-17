@@ -1,1 +1,170 @@
-/* App.css intentionally left empty to avoid overriding custom tailwind styles */
+/* Floating header: logo left, nav pill right */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  padding-top: env(safe-area-inset-top, 0px);
+  background: transparent;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.site-header__bar {
+  pointer-events: auto;
+  overflow: visible;
+}
+
+.site-header__nav {
+  overflow: visible;
+}
+
+/* Mobile menu button — only visible below 768px (do not set display:flex here; Tailwind controls visibility) */
+.site-header__menu-btn {
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  color: #334155;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transition: background 0.2s, color 0.2s;
+}
+
+.site-header__menu-btn:hover {
+  background: #fff;
+  color: #0f172a;
+}
+
+.site-header__menu-btn--overlay {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #f8fafc;
+}
+
+.site-header__menu-btn--overlay:hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+/* Outer pill — no overflow clip (dropdown renders outside) */
+.site-header__pill {
+  display: flex;
+  align-items: center;
+  min-height: 2.75rem;
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 9999px;
+  box-shadow:
+    0 6px 28px rgba(0, 0, 0, 0.14),
+    0 2px 6px rgba(0, 0, 0, 0.08);
+  overflow: visible;
+}
+
+/* Inner row scrolls horizontally on mobile only */
+.site-header__pill-scroll {
+  gap: 0.25rem;
+  padding: 0.5rem 0.75rem 0.5rem 0.85rem;
+  overflow-x: auto;
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.site-header__pill-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .site-header__pill {
+    min-height: 3.25rem;
+  }
+
+  .site-header__pill-scroll {
+    gap: 0.35rem;
+    padding: 0.65rem 1rem 0.65rem 1.15rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-header__pill {
+    min-height: 3.5rem;
+  }
+
+  .site-header__pill-scroll {
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem 0.75rem 1.5rem;
+    overflow-x: visible;
+  }
+}
+
+.site-header__pill-divider {
+  width: 1px;
+  height: 1.35rem;
+  margin: 0 0.35rem;
+  background: rgba(15, 23, 42, 0.15);
+  flex-shrink: 0;
+}
+
+@media (min-width: 640px) {
+  .site-header__pill-divider {
+    height: 1.6rem;
+    margin: 0 0.5rem;
+  }
+}
+
+/* Services dropdown — fixed under Services button, over hero */
+.site-header__dropdown-fixed {
+  position: fixed;
+  z-index: 100;
+  pointer-events: auto;
+}
+
+.site-header__dropdown-panel {
+  background: rgba(7, 50, 79, 0.98);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  min-width: min(100%, 17.5rem);
+  max-height: min(70vh, 22rem);
+  overflow-y: auto;
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.45),
+    0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 640px) {
+  .site-header__dropdown-panel {
+    min-width: 18rem;
+    border-radius: 1.25rem;
+  }
+}
+
+.site-header__dropdown-link {
+  display: block;
+  padding: 0.65rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  border-radius: 0.75rem;
+  transition: color 0.2s, background 0.2s;
+}
+
+.site-header__dropdown-link:hover {
+  color: #fbbf24;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+@media (min-width: 640px) {
+  .site-header__dropdown-link {
+    padding: 0.75rem 1rem;
+    font-size: 0.9375rem;
+  }
+}

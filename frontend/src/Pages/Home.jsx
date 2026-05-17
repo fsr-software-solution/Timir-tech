@@ -9,7 +9,7 @@ import Contact from '../Components/home/Contact';
 
 const Home = () => {
     return (
-        <main id="home" className="scroll-mt-[var(--navbar-offset,6.5rem)]">
+        <main id="home" className="scroll-mt-[var(--navbar-offset,5.5rem)]">
             <Hero />
             <About />
             <Services />
